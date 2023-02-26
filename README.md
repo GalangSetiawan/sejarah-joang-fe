@@ -1,5 +1,7 @@
 # SejarahJoang
 
+## versi production github `https://galangsetiawan.github.io/sejarah-joang-fe/#/dashboard`
+
 website ini dapat di akses menggunakan codespace,
 cara running project angular pada codespace
 1. install angular dengan versi yang sesuai pada project ->  `npm install angular/cli@versi.yang.diinginkan`
