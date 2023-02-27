@@ -1,9 +1,43 @@
-<div class="uk-text-center uk-grid-collapse" uk-grid>
-    <div class="uk-width-auto@m " >
-        <div class="uk-background-primary uk-card-default uk-card-body " uk-height-viewport > 
-			<div class=" uk-flex uk-flex-middle" >
-				<span uk-icon="menu"></span>
+
+
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+	  
+
+	  <button type="button"  class="sidebar-close uk-close-large" (click)="sidebarShow = !sidebarShow" aria-label="Close" uk-close></button>
+
+	<div class="sidebar-content">
+		<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-position-center" uk-grid>
+			<div>
+				<div class="uk-card uk-card-default uk-card-body">
+					<h3 class="uk-card-title"  (click)="sidebarShow = !sidebarShow">Default</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
 			</div>
+			<div>
+				<div class="uk-card uk-card-primary uk-card-body">
+					<h3 class="uk-card-title">Primary</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="uk-text-center uk-grid-collapse" uk-grid>
+    <div class="uk-width-auto@m "  style="display: inherit;">
+        <div class="uk-background-primary uk-card-default uk-card-body"  uk-height-viewport > 
+			
+
+
+				<span class="sidebar-open" (click)="sidebarShow = !sidebarShow" uk-icon="icon: menu; ratio: 1.5"></span>
+
 		</div>
     </div>
     <div class="uk-width-1-2@m ">

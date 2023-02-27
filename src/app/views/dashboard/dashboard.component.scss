@@ -1,0 +1,40 @@
+
+.sidebar-slider {
+    position: fixed;
+    top: 0;
+    left: 10;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateX(-100%);
+    transition: ease-in-out 300ms transform;
+    width: 100%;
+    z-index: 10000;
+}
+
+.sidebar-slider.sidebar-slide-in {
+    transform: translateX(0%);
+    transition: ease-in-out 600ms transform;
+}
+
+.sidebar-close {
+    position: fixed;
+    top: 47%;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.sidebar-open {
+    position: fixed;
+    top: 47%;
+    left: 8px;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.sidebar-content {
+    
+    height: 100%;
+}
