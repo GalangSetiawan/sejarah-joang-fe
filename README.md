@@ -9,6 +9,17 @@ cara running project angular pada codespace
 3. jika berhasil running nanti akan buka tab baru yg berisi halaman preview nya, jika tidak muncul cek otorisasi site nya (kl di chrome ada di bagian kanan address bar)
 4. alamat preview biasanya seperti ini `https://galangsetiawan-musical-giggle-ppxwq5qqpg5h9xpg-4200.preview.app.github.dev/#/dashboard`
 
+
+## deploy ci/cd github
+1. build source angularnya dengan peritah berikut
+ `ng build --output-path docs --base-href /sejarah-joang-fe`
+nanti akan generate folder docs di folder project
+
+2. dibagian file index.html
+ubah href nya jadi
+`<base href="https://galangsetiawan.github.io/sejarah-joang-fe/">`
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
 ## Development server
