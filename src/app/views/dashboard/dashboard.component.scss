@@ -2,7 +2,7 @@
 .sidebar-slider {
     position: fixed;
     top: 0;
-    left: 10;
+    left: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
     transform: translateX(-100%);
@@ -26,12 +26,10 @@
 }
 
 .sidebar-open {
-    position: fixed;
-    top: 47%;
-    left: 8px;
+    text-align: center;
     color: white;
     cursor: pointer;
-    padding: 16px;
+    margin-top: 38vh;
 }
 
 .sidebar-content {
