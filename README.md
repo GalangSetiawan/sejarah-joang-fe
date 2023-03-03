@@ -13,6 +13,7 @@ cara running project angular pada codespace
 ## deploy ci/cd github
 1. build source angularnya dengan peritah berikut
  `ng build --output-path docs --base-href /sejarah-joang-fe`
+ `ng build --output-path docs --base-href "https://galangsetiawan.github.io/sejarah-joang-fe/"`.
 nanti akan generate folder docs di folder project
 
 2. dibagian file index.html
