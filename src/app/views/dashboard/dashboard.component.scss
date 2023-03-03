@@ -66,6 +66,15 @@
   font-size: 28px; /* Increased text to enable scrolling */
 }
 
+.hide-on-large-screen{
+  display:none;
+}
+
+.hide-on-small-screen{
+  display:initial;
+}
+
+
 @media screen and (max-height: 450px) {
   .sidenav {
       padding-top: 15px;
@@ -81,7 +90,16 @@
   }
   .main {
       margin-left: 0; /* Same as the width of the sidenav */
-    }
+  }
+
+  .hide-on-large-screen{
+    display: initial;
+  }
+
+  .hide-on-small-screen{
+    display: none;
+  }
+  
 }
 
 // ================================
