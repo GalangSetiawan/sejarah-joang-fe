@@ -1,6 +1,6 @@
 <!-- menu for small screen -->
 <div class="show-on-small-screen " id="toggle-menu" uk-toggle="target: #toggle-menu; animation: uk-animation-slide-right-medium" >
-    <div (click)="sidebarShow = !sidebarShow" class=" uk-position-top-left uk-overlay uk-overlay-default uk-background-secondary link-light uk-position-fixed uk-position-z-index">
+    <div (click)="sidebarShow = !sidebarShow" class=" uk-position-top-left p-2 uk-background-secondary link-light uk-position-fixed uk-position-z-index">
         <span 
             class="link-light"
             uk-icon="icon: menu; ratio: 1.5">
@@ -24,7 +24,7 @@
 
 
     <!-- button atas -->
-    <div (click)="sidebarShow = !sidebarShow" uk-toggle="target: #toggle-menu; animation: uk-animation-slide-left" class=" uk-position-top-left uk-overlay  show-on-small-screen link-light uk-position-fixed uk-position-z-index">
+    <div (click)="sidebarShow = !sidebarShow" uk-toggle="target: #toggle-menu; animation: uk-animation-slide-left" class=" uk-position-top-left p-2 show-on-small-screen link-light uk-position-fixed uk-position-z-index">
         <span class="link-light"
               uk-icon="icon: close; ratio: 1.5">
         </span>
@@ -69,9 +69,10 @@
   </div>
 </div>
 
-<div class="main" id="top-page">
+<div class="main uk-background-cover" style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)" id="top-page">
   
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
 
 </div>
 

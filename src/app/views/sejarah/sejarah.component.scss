@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+$primary: #007EA7;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #001829;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 32px;
+    height: 0;
+    width: 2px;
+    background-color: $primary;
+  }
+
+  .info {
+    margin: -3px -3px 20px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    text-align: left;
+    // color: white;
+  }
+
+  .text {
+    font-size: 12px;
+    // color: rgba(white, 0.7);
+    padding-bottom: 0;
+    margin: 0;
+    text-align: left;
+
+  }
+
+  &:not(:last-child) {
+    &:after {
+      height: 53%;
+    }
+   
+  }
+}
+
+.number {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid $primary;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 14px;
+
+  &.completed {
+    background-color: $primary;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+
+    path {
+      fill: white;
+    }
+  }
+}
