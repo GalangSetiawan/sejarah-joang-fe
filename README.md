@@ -21,6 +21,8 @@ ubah href nya jadi
 `<base href="https://galangsetiawan.github.io/sejarah-joang-fe/">`
 
 
+json-server --watch db.json
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
 ## Development server

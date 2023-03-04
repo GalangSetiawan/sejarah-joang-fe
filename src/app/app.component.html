@@ -39,7 +39,7 @@
               </div>
           </div>
           <div>
-              <div class="uk-card uk-card-primary uk-card-body">
+              <div class="uk-card uk-card-primary uk-card-body" [routerLink]="['/dashboard']">
                   <h3 class="uk-card-title">Primary</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
@@ -56,7 +56,7 @@
 <div class="sidenav">
   <div class="uk-background-secondary uk-card-default "  uk-height-viewport > 
 
-      <a class="p-3" [routerLink]="['/dashboard']">
+      <a class="p-3"  href="#top-page" uk-scroll>
           <img src="assets/img/belgium-wwii.png" alt="" >
       </a>
 
@@ -69,7 +69,7 @@
   </div>
 </div>
 
-<div class="main">
+<div class="main" id="top-page">
   
     <router-outlet></router-outlet>
 
