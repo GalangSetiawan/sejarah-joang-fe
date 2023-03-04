@@ -1,1 +1,79 @@
-<router-outlet></router-outlet>
+<!-- menu for small screen -->
+<div class="show-on-small-screen " id="toggle-menu" uk-toggle="target: #toggle-menu; animation: uk-animation-slide-right-medium" >
+    <div (click)="sidebarShow = !sidebarShow" class=" uk-position-top-left uk-overlay uk-overlay-default uk-background-secondary link-light uk-position-fixed uk-position-z-index">
+        <span class="link-light"
+              uk-icon="icon: menu; ratio: 1.5">
+        </span>
+    </div>
+</div>
+
+
+
+
+<!-- side menu for large screen -->
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+
+    <!-- button kanan -->
+    <div class="uk-position-large uk-position-center-right uk-overlay show-on-large-screen">
+        <span class="link-light"
+        (click)="sidebarShow = !sidebarShow"
+        uk-icon="icon: close; ratio: 2.5">
+        </span>
+    </div>
+
+
+    <!-- button atas -->
+    <div (click)="sidebarShow = !sidebarShow" uk-toggle="target: #toggle-menu; animation: uk-animation-slide-left" class=" uk-position-top-left uk-overlay  show-on-small-screen link-light uk-position-fixed uk-position-z-index">
+        <span class="link-light"
+              uk-icon="icon: close; ratio: 1.5">
+        </span>
+    </div>
+
+  <div class="sidebar-content">
+      <div class="uk-child-width-1-2@s uk-grid-small uk-grid-match uk-position-medium uk-position-center-left" uk-grid>
+          <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                  <h3 class="uk-card-title"  (click)="sidebarShow = !sidebarShow">Default</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+          </div>
+          <div>
+              <div class="uk-card uk-card-primary uk-card-body">
+                  <h3 class="uk-card-title">Primary</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</div>
+
+
+
+<!-- content -->
+
+<div class="sidenav">
+  <div class="uk-background-secondary uk-card-default "  uk-height-viewport > 
+      <div class="p-3" >
+          <img src="assets/img/belgium-wwii.png" alt="">
+      </div>
+
+      <div class="sidebar-open" >
+          <span 
+              (click)="sidebarShow = !sidebarShow" 
+              uk-icon="icon: menu; ratio: 2.5">
+          </span>
+      </div>
+  </div>
+</div>
+
+<div class="main">
+  
+    <router-outlet></router-outlet>
+
+</div>
+
+
+
+
+
