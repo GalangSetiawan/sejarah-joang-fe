@@ -1,8 +1,9 @@
 <!-- menu for small screen -->
 <div class="show-on-small-screen " id="toggle-menu" uk-toggle="target: #toggle-menu; animation: uk-animation-slide-right-medium" >
     <div (click)="sidebarShow = !sidebarShow" class=" uk-position-top-left uk-overlay uk-overlay-default uk-background-secondary link-light uk-position-fixed uk-position-z-index">
-        <span class="link-light"
-              uk-icon="icon: menu; ratio: 1.5">
+        <span 
+            class="link-light"
+            uk-icon="icon: menu; ratio: 1.5">
         </span>
     </div>
 </div>
@@ -33,7 +34,7 @@
       <div class="uk-child-width-1-2@s uk-grid-small uk-grid-match uk-position-medium uk-position-center-left" uk-grid>
           <div>
               <div class="uk-card uk-card-default uk-card-body">
-                  <h3 class="uk-card-title"  (click)="sidebarShow = !sidebarShow">Default</h3>
+                  <h3 class="uk-card-title" (click)="sidebarShow = !sidebarShow">Default</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
           </div>
@@ -54,9 +55,10 @@
 
 <div class="sidenav">
   <div class="uk-background-secondary uk-card-default "  uk-height-viewport > 
-      <div class="p-3" >
-          <img src="assets/img/belgium-wwii.png" alt="">
-      </div>
+
+      <a class="p-3" [routerLink]="['/dashboard']">
+          <img src="assets/img/belgium-wwii.png" alt="" >
+      </a>
 
       <div class="sidebar-open" >
           <span 

@@ -7,11 +7,15 @@ import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 
 import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { PostsComponent } from './views/posts/posts.component';
+import { ArticleComponent } from './views/article/article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    PostsComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserAnimationsModule,
