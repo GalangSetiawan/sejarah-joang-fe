@@ -9,22 +9,28 @@
 						
 						
 						<div class="uk-position-center uk-overlay">
+
+							<blockquote cite="#">
+								<p class="uk-margin-small-bottom uk-light">The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element.</p>
+								<footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
+							</blockquote>
+
 							<div class="uk-child-width-1-1@m" uk-grid>
 
 								<img src="assets/img/belgium-wwii.png" class="" alt="" style="width: 1000px;">
 			
 							</div>
-							<div class="uk-child-width-1-1@m">
 
-									<a class="uk-button uk-button-primary" href="#down-content" uk-scroll>Scroll down</a>
-									
-											
-											
-			
-							</div>
+							<section id="section10" class="demo">
+								<a href="#down-content" uk-scroll><span></span></a>
+							</section>
+
+							
 							
 
 						</div>
+
+						
 
 						
 
@@ -37,115 +43,44 @@
 				</div>
 			</div>
 		</div>
-	
-		<div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse" id="down-content" uk-grid>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-					<h3 class="uk-card-title">Left</h3>
-
-					<a [routerLink]="['/post', 'daya-tarik' ]" class="button button--flex button--link home__info-button">
-                        ke post <i class="ri-arrow-right-line"></i>
-                    </a>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-				</div>
-			</div>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-					<h3 class="uk-card-title">Right</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<a [routerLink]="['/sejarah' ]" class="button button--flex button--link home__info-button">
-                        sejarah <i class="ri-arrow-right-line"></i>
-                    </a>
-				</div>
-			</div>
-		</div>
-	
-		<div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse" uk-grid>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-					<h3 class="uk-card-title">Left</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-					<h3 class="uk-card-title">Right</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
-	
-		<div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse" uk-grid>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-					<h3 class="uk-card-title">Left</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-					<h3 class="uk-card-title">Right</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
-	
-		<div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse" uk-grid>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-					<h3 class="uk-card-title">Left</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-					<h3 class="uk-card-title">Right</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
-		<div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse" uk-grid>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-					<h3 class="uk-card-title">Left</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-					<h3 class="uk-card-title">Right</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
-	
-		<div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse" uk-grid>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-					<h3 class="uk-card-title">Left</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-			<div>
-				<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-					<h3 class="uk-card-title">Right</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
 	</div>
 
-  	<div class="uk-child-width-1-1@m uk-grid-match uk-grid-collapse" uk-grid>
+	<div class="uk-child-width-expand@s uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card" id="down-content" >
 		<div>
-			<div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-				<h3 class="uk-card-title">Left</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<a href="#" uk-totop uk-scroll></a>
-
+			<div class="uk-card uk-child-width-1-1@m uk-grid-collapse" uk-grid="masonry: true" uk-height-viewport>
+				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
+					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 25vh">
+						<a [routerLink]="['/sejarah']">Sejarah</a>
+					</div>					</div>
+				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
+					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 25vh">
+						<a [routerLink]="['/article', 'daya-sasasa' ]">Article</a>
+					</div>				</div>
+				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
+					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 25vh">
+						<a [routerLink]="['/post', 'daya-tarik' ]">Post</a>
+					</div>
+				</div>
+				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
+					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 25vh">
+						<a [routerLink]="['/dashboard']">Dashboard</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="uk-card uk-child-width-1-1@m uk-grid-collapse" uk-grid="masonry: true" uk-height-viewport>
+				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
+					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 50vh">Item</div>
+				</div>
+				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
+					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 50vh">Item</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	
 
 
 	
