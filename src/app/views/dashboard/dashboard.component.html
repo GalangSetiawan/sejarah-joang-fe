@@ -3,7 +3,7 @@
   
 	<div class="" uk-height-viewport >
 		
-		<div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse uk-background-cover" uk-grid uk-height-viewport data-src="https://www.belgiumwwii.be/content/img/home.jpg" uk-img="loading: eager">
+		<div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse uk-background-cover" data-src="https://www.belgiumwwii.be/content/img/home.jpg" uk-img="loading: eager"  uk-grid uk-height-viewport>
 			<div>
 				<div class="uk-card uk-card-body background-transparent-gradient" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
 						
@@ -45,26 +45,41 @@
 		</div>
 	</div>
 
-	<div class="uk-child-width-expand@s uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card" id="down-content" >
+	<div class="uk-child-width-expand@s uk-grid-collapse " uk-grid uk-height-match="target: > div > .uk-card" id="down-content" >
 		<div>
 			<div class="uk-card uk-child-width-1-1@m uk-grid-collapse" uk-grid="masonry: true" uk-height-viewport>
-				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
-					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 25vh">
-						<a [routerLink]="['/sejarah']">Sejarah</a>
-					</div>					</div>
-				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
-					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 25vh">
-						<a [routerLink]="['/article', 'daya-sasasa' ]">Article</a>
-					</div>				</div>
-				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
-					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 25vh">
-						<a [routerLink]="['/post', 'daya-tarik' ]">Post</a>
-					</div>
+				<div class="uk-background-cover img-cover-dashboard p-4" style="background-image: url(https://getuikit.com/docs/images/dark.jpg); height:25vh">
+
+					<article class="uk-article font-size-general uk-light">
+						<h1 class="uk-article-title"><a class="uk-link-reset" [routerLink]="['/sejarah']">Sejarah</a></h1>
+						<div class="hr"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					</article>
+
 				</div>
-				<div class="uk-background-cover" style="background-image: url(https://getuikit.com/docs/images/dark.jpg)">
-					<div class="uk-flex uk-flex-center uk-flex-middle uk-light" style="height: 25vh">
-						<a [routerLink]="['/dashboard']">Dashboard</a>
-					</div>	
+				<div class="uk-background-cover img-cover-dashboard p-4" style="background-image: url(https://getuikit.com/docs/images/dark.jpg); height:25vh">
+					<article class="uk-article font-size-general uk-light">
+						<h1 class="uk-article-title"><a class="uk-link-reset" [routerLink]="['/article', 'daya-sasasa' ]">Article</a></h1>
+						<div class="hr"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					</article>
+				
+				</div>
+				<div class="uk-background-cover img-cover-dashboard p-4" style="background-image: url(https://getuikit.com/docs/images/dark.jpg); height:25vh">
+					<article class="uk-article font-size-general uk-light">
+						<h1 class="uk-article-title"><a class="uk-link-reset" [routerLink]="['/post', 'daya-tarik' ]">Posts</a></h1>
+						<div class="hr"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					</article>
+					
+				</div>
+				<div class="uk-background-cover img-cover-dashboard p-4" style="background-image: url(https://getuikit.com/docs/images/dark.jpg); height:25vh">
+					<article class="uk-article font-size-general uk-light">
+						<h1 class="uk-article-title"><a class="uk-link-reset" [routerLink]="['/dashboard']">Dashboard</a></h1>
+						<div class="hr"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					</article>
+					
 				</div>
 			</div>
 		</div>
