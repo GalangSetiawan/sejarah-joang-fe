@@ -16,11 +16,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+.steps::-webkit-scrollbar{
+  display: none;
 }
 
 .steps {
   max-width: 300px;
   margin: 0 auto;
+  overflow: scroll;
+  max-height: 40vh;
+
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
 }
 
 .step {
