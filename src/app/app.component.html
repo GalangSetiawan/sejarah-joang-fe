@@ -13,12 +13,14 @@
 <div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
 
     <!-- button kanan -->
-    <div class="uk-position-large uk-position-center-right uk-overlay show-on-large-screen">
-        <span class="link-light"
-        (click)="sidebarShow = !sidebarShow"
-        uk-icon="icon: close; ratio: 2">
-        </span>
-    </div>
+    <a (click)="sidebarShow = !sidebarShow">
+        <div class="uk-position-large uk-position-center-right uk-overlay show-on-large-screen" >
+            <span class="link-light"
+            (click)="sidebarShow = !sidebarShow"
+            uk-icon="icon: close; ratio: 2">
+            </span>
+        </div>
+    </a>
 
 
     <!-- button atas -->
