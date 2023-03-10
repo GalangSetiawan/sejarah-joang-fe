@@ -50,14 +50,39 @@
                             <li><a href="#">Sub item</a></li>
                             <li><a href="#">Sub item</a></li>
                         </ul>
-                    </li>
-                    <li class="uk-parent">
-                        <a href="#">Parent <span uk-nav-parent-icon></span></a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="#">Sub item</a></li>
-                            <li><a href="#">Sub item</a></li>
-                        </ul>
                     </li> -->
+                    <li class="uk-parent" [class.uk-active] = "setCurrentMenu('/koleksi')">
+                        <a>
+                            <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/koleksi')" [routerLink]="['/koleksi' ]">Koleksi</span> 
+                            <span uk-nav-parent-icon></span>
+                        </a>
+                        <ul class="uk-nav-sub">
+                            <li [class.uk-active] = "setCurrentMenu('/benda-sejarah')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/benda-sejarah')" [routerLink]="['/benda-sejarah' ]">Benda bersejarah</a>
+                            </li>
+                            <li [class.uk-active] = "setCurrentMenu('/kendaraan-sejarah')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/kendaraan-sejarah')" [routerLink]="['/kendaraan-sejarah' ]">Kendaraan bersejarah</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+                    <li class="uk-parent" [class.uk-active] = "setCurrentMenu('/sejarah')">
+                        <a>
+                            <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Sejarah</span> 
+                            <span uk-nav-parent-icon></span>
+                        </a>
+                        <ul class="uk-nav-sub">
+                            <li [class.uk-active] = "setCurrentMenu('/sejarah')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Garis sejarah</a>
+                            </li>
+                            <li [class.uk-active] = "setCurrentMenu('/tokoh-sejarah')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tokoh-sejarah')" [routerLink]="['/tokoh-sejarah' ]">Tokoh sejarah</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
                     <li [class.uk-active] = "setCurrentMenu('/dashboard')">
                         <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/dashboard')" [routerLink]="['/dashboard' ]">Dashboard</a>
                     </li>
@@ -69,6 +94,16 @@
                     </li>
                     <li [class.uk-active] = "setCurrentMenu('/sejarah')">
                         <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah']">Sejarah</a>
+                    </li>
+
+                    <li [class.uk-active] = "setCurrentMenu('/snk')">
+                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/snk')" [routerLink]="['/snk']">Syarat & ketentuan</a>
+                    </li>
+                    <li [class.uk-active] = "setCurrentMenu('/faq')">
+                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/faq')" [routerLink]="['/faq']">FAQ</a>
+                    </li>
+                    <li [class.uk-active] = "setCurrentMenu('/tentang')">
+                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tentang')" [routerLink]="['/tentang']">Tentang kami</a>
                     </li>
                     <!-- <li><a (click)="sidebarShow = !sidebarShow" [routerLink]="['/dashboard']">Item</a></li>
                     <li><a (click)="sidebarShow = !sidebarShow" [routerLink]="['/dashboard']">Item</a></li>
