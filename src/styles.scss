@@ -1,8 +1,28 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Syne:wght@400;600&display=swap');
+// font-family: 'Merriweather', serif;
+// font-family: 'Syne', sans-serif;
+
+
 /* You can add global styles to this file, and also import other style files */
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
-    
+    font-family: 'Merriweather', serif !important;
   }
+
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'Syne', serif !important;
+  }
+
+  .nf{
+    font-family: 'Merriweather', serif !important;
+  }
+
+  .hf{
+    font-family: 'Syne', serif !important;
+  }
+
+
 
   a:link { text-decoration: none; }
 
@@ -52,6 +72,10 @@ body {
 }
 
 
+.zoom-out{
+  zoom: 1;
+}
+
 @media only screen and (max-width: 1000px) {
   .show-on-large-screen{
     display: none;
@@ -60,4 +84,9 @@ body {
   .show-on-small-screen{
     display: inherit;
   }
+
+  .zoom-out{
+    zoom: 0.7;
+  }
+
 }
