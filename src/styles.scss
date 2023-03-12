@@ -41,3 +41,23 @@ body {
 ::-webkit-scrollbar{
   display: none;
 }
+
+// ===============================
+.show-on-large-screen{
+  display: inherit;
+}
+
+.show-on-small-screen{
+  display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .show-on-large-screen{
+    display: none;
+  }
+
+  .show-on-small-screen{
+    display: inherit;
+  }
+}

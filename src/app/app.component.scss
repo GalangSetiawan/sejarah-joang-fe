@@ -45,6 +45,10 @@
   margin-left: -8px;
 }
 
+.img-logo-menu{
+  width: 100%;
+}
+
 // =====================
 .sidenav {
     height: 100%;
@@ -75,13 +79,6 @@
   }
   
 
-  .show-on-large-screen{
-    display: inherit;
-  }
-
-  .show-on-small-screen{
-    display: none;
-  }
 
 
   @media screen and (max-height: 450px) {
@@ -100,12 +97,5 @@
     .main {
         margin-left: 0px; /* Same as the width of the sidenav */
     }
-
-    .show-on-large-screen{
-      display: none;
-    }
-  
-    .show-on-small-screen{
-      display: inherit;
-    }
+   
   }
