@@ -13,11 +13,13 @@ import { TokohSejarahComponent } from './views/tokoh-sejarah/tokoh-sejarah.compo
 import { SnkComponent } from './views/snk/snk.component';
 import { FaqComponent } from './views/faq/faq.component';
 import { TentangKamiComponent } from './views/tentang-kami/tentang-kami.component';
+import { LoginComponent } from './views/login/login.component';
 
 
 const routes: Routes = [
   { path: "", redirectTo: "dashboard", pathMatch: "full" },
   { path: "dashboard", component: DashboardComponent },
+  { path: "login", component: LoginComponent },
   { path: "post/:slug", component: PostsComponent },
   { path: "article/:slug", component: ArticleComponent },
   { path: "sejarah", component: SejarahComponent },

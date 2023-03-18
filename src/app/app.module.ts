@@ -18,6 +18,7 @@ import { TokohSejarahComponent } from './views/tokoh-sejarah/tokoh-sejarah.compo
 import { SnkComponent } from './views/snk/snk.component';
 import { FaqComponent } from './views/faq/faq.component';
 import { TentangKamiComponent } from './views/tentang-kami/tentang-kami.component';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TentangKamiComponent } from './views/tentang-kami/tentang-kami.componen
     TokohSejarahComponent,
     SnkComponent,
     FaqComponent,
-    TentangKamiComponent
+    TentangKamiComponent,
+    LoginComponent
   ],
   imports: [
     BrowserAnimationsModule,
