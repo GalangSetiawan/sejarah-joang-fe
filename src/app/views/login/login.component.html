@@ -1,1 +1,67 @@
-<p>login works!</p>
+
+
+<section class="login uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-overflow-hidden uk-light font-size-general" data-uk-height-viewport>
+        
+    <!-- overlay -->
+    <div class="uk-position-cover uk-overlay-primary"></div>
+    <!-- /overlay -->
+    <div class="uk-position-bottom-center uk-position-small uk-visible@m uk-position-z-index">
+        <span class="uk-text-small uk-text-muted">© 2023 Sejarah Joang - <a href="https://github.com/GalangSetiawan">Created by Galang Setiawan</a> | Built with <a [routerLink]="['../']" title="Visit UIkit 3 site" data-uk-tooltip><span data-uk-icon="uikit"></span></a></span>
+    </div>
+    <div class="uk-width-medium uk-padding-small uk-position-z-index" uk-scrollspy="cls: uk-animation-fade">
+        
+        <div class="uk-text-center uk-margin">
+            <img src="assets/img/login-logo.svg" alt="Logo">
+        </div>
+
+        <!-- login -->
+        <form class="toggle-class" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+            <fieldset class="uk-fieldset">
+                <div class="uk-margin-small">
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip" style="padding-right: 20px;" data-uk-icon="icon: user"></span>
+                        <input class="uk-input uk-border-pill" style="padding-left: 20px;" placeholder="Username" type="username" name="username" id="username"  [(ngModel)]="form.username" required #username="ngModel" autocomplete="off">
+                    </div>
+                </div>
+                <div class="uk-margin-small">
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip" style="padding-right: 20px;" data-uk-icon="icon: lock"></span>
+                        <input class="uk-input uk-border-pill" style="padding-left: 20px;" placeholder="Password" type="password" name="password" id="password" [(ngModel)]="form.password" required minlength="6" #password="ngModel" autocomplete="off">
+                    </div>
+                </div>
+                <!-- <div class="uk-margin-small">
+                    <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
+                </div> -->
+                <br>
+                <div class="uk-margin-bottom">
+                    <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1 hf">LOG IN</button>
+                </div>
+            </fieldset>
+        </form>
+        <!-- /login -->
+
+        <!-- recover password -->
+        <form class="toggle-class" action="login-dark.html" hidden>
+            <div class="uk-margin-small">
+                <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon uk-form-icon-flip" style="padding-right: 20px;" data-uk-icon="icon: mail"></span>
+                    <input class="uk-input uk-border-pill"  style="padding-left: 20px;" placeholder="E-mail" required type="text">
+                </div>
+            </div>
+            <div class="uk-margin-bottom">
+                <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1 hf">SEND PASSWORD</button>
+            </div>
+        </form>
+        <!-- /recover password -->
+        
+        <!-- action buttons -->
+        <div>
+            <div class="uk-text-center">
+                <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade">Forgot your password?</a>
+                <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span data-uk-icon="arrow-left"></span> Back to Login</a>
+            </div>
+        </div>
+        <!-- action buttons -->
+    </div>
+</section>
+

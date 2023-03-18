@@ -18,8 +18,8 @@ import { LoginComponent } from './views/login/login.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "dashboard", pathMatch: "full" },
-  { path: "dashboard", component: DashboardComponent },
   { path: "login", component: LoginComponent },
+  { path: "dashboard", component: DashboardComponent },
   { path: "post/:slug", component: PostsComponent },
   { path: "article/:slug", component: ArticleComponent },
   { path: "sejarah", component: SejarahComponent },

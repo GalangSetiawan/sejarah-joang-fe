@@ -8,12 +8,20 @@ import { ActivatedRoute, Router } from '@angular/router'
 })
 export class AppComponent implements OnInit {
   public sidebarShow: boolean = false;
+  public isLoginScreen:boolean = false;
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private route: Router,
 
     ) {
+      route.events.subscribe((val) => {
+        if(this.route.url.includes('login')){
+          this.isLoginScreen = true;
+        }else{
+          this.isLoginScreen = false;
+        }
+    });
   }
 
   ngOnInit() {
@@ -21,9 +29,4 @@ export class AppComponent implements OnInit {
   }
 
 
-  public setCurrentMenu(url:string){
-    console.log('setCurrentMenu ===>', this.route.url);
-    if(this.route.url.includes(url)) return true;
-    else return false;
-  }
 }

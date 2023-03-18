@@ -19,6 +19,7 @@ import { SnkComponent } from './views/snk/snk.component';
 import { FaqComponent } from './views/faq/faq.component';
 import { TentangKamiComponent } from './views/tentang-kami/tentang-kami.component';
 import { LoginComponent } from './views/login/login.component';
+import { SidenavComponent } from './views/base/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { LoginComponent } from './views/login/login.component';
     SnkComponent,
     FaqComponent,
     TentangKamiComponent,
-    LoginComponent
+    LoginComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserAnimationsModule,

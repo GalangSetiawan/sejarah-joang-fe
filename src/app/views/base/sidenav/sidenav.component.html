@@ -1,0 +1,156 @@
+<!-- menu for small screen -->
+<div class="show-on-small-screen">
+    <div (click)="sidebarShow = !sidebarShow" class=" uk-position-top-left p-2 uk-background-secondary link-light uk-position-fixed uk-position-z-index">
+        <span 
+            class="link-light"
+            uk-icon="icon: menu; ratio: 1.5">
+        </span>
+    </div>
+</div>
+
+
+<!-- side menu for large screen -->
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+
+    <!-- <div class="uk-position-large uk-position-center-right uk-overlay show-on-large-screen" >
+        <a (click)="sidebarShow = !sidebarShow">
+            <span class="link-light"
+            uk-icon="icon: close; ratio: 2">
+            </span>
+        </a>
+    </div> -->
+
+
+    <!-- button atas -->
+    <div (click)="sidebarShow = !sidebarShow" class=" uk-position-top-left p-2 uk-background-secondary show-on-small-screen link-light uk-position-fixed uk-position-z-index">
+        <span class="link-light"
+              uk-icon="icon: close; ratio: 1.5">
+        </span>
+    </div>
+
+  <div class="sidebar-content">
+
+      <div class="uk-padding-large uk-padding-remove-top container uk-position-center-left" >
+
+
+            <div class="uk-position-center-left uk-overlay zoom-out" uk-grid>
+    
+                <div class="uk-width-1-3@s">
+                    <div class="uk-card  uk-card-body">
+                         <ul class="uk-nav-primary uk-light" uk-nav>
+                            <li class="uk-parent" [class.uk-active] = "setCurrentMenu('/koleksi')">
+                                <a>
+                                    <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/koleksi')" [routerLink]="['/koleksi' ]">Koleksi</span> 
+                                    <span uk-nav-parent-icon></span>
+                                </a>
+                                <ul class="uk-nav-sub">
+                                    <li [class.uk-active] = "setCurrentMenu('/benda-sejarah')">
+                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/benda-sejarah')" [routerLink]="['/benda-sejarah' ]">Benda bersejarah</a>
+                                    </li>
+                                    <li [class.uk-active] = "setCurrentMenu('/kendaraan-sejarah')">
+                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/kendaraan-sejarah')" [routerLink]="['/kendaraan-sejarah' ]">Kendaraan bersejarah</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+        
+                            <li class="uk-parent" [class.uk-active] = "setCurrentMenu('/sejarah')">
+                                <a>
+                                    <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Sejarah</span> 
+                                    <span uk-nav-parent-icon></span>
+                                </a>
+                                <ul class="uk-nav-sub">
+                                    <li [class.uk-active] = "setCurrentMenu('/sejarah')">
+                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Garis sejarah</a>
+                                    </li>
+                                    <li [class.uk-active] = "setCurrentMenu('/tokoh-sejarah')">
+                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tokoh-sejarah')" [routerLink]="['/tokoh-sejarah' ]">Tokoh sejarah</a>
+                                    </li>
+                                </ul>
+                            </li>
+        
+        
+                            <li [class.uk-active] = "setCurrentMenu('/dashboard')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/dashboard')" [routerLink]="['/dashboard' ]">Dashboard</a>
+                            </li>
+                            <li [class.uk-active] = "setCurrentMenu('/article')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/article')" [routerLink]="['/article', 'daya-sasasa' ]">Article</a>
+                            </li>
+                            <li [class.uk-active] = "setCurrentMenu('/post')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/post')" [routerLink]="['/post', 'daya-tarik' ]">Posts</a>
+                            </li>
+                            <li [class.uk-active] = "setCurrentMenu('/snk')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/snk')" [routerLink]="['/snk']">Syarat & ketentuan</a>
+                            </li>
+                            <li [class.uk-active] = "setCurrentMenu('/faq')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/faq')" [routerLink]="['/faq']">FAQ</a>
+                            </li>
+                            <li [class.uk-active] = "setCurrentMenu('/tentang')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tentang')" [routerLink]="['/tentang']">Tentang kami</a>
+                            </li>
+                            <li [class.uk-active] = "setCurrentMenu('/login')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/login')" [routerLink]="['/login']">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-expand@s">
+                    <div class="uk-card  uk-card-body">
+                        <dl class="uk-description-list uk-description-list-divider uk-light">
+                            <dt class="uk-text-danger">Description term</dt>
+                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+                            <dt class="uk-text-danger">Description term</dt>
+                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+                            <dt class="uk-text-danger">Description term</dt>
+                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+    
+    
+                        </dl>
+                    </div>
+                </div>
+                
+                <div class="uk-width-auto@s  show-on-large-screen">
+                    <div class="uk-card uk-card-body ">
+                        <div (click)="sidebarShow = !sidebarShow" uk-toggle="target: #toggle-menu; animation: uk-animation-slide-left" class="">
+                            <span class="link-light"
+                                  uk-icon="icon: close; ratio: 2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+
+        
+ 
+      </div>
+  </div>
+</div>
+
+
+
+<!-- content -->
+
+<div class="sidenav">
+  <div class="uk-background-secondary uk-card-default "  uk-height-viewport > 
+
+      <a class="p-3" href="#top-page"  uk-scroll>
+          <img src="assets/img/belgium-wwii.png" alt="" >
+      </a>
+
+      <div class="sidebar-open" >
+          <span 
+              (click)="sidebarShow = !sidebarShow" 
+              uk-icon="icon: menu; ratio: 2">
+          </span>
+      </div>
+  </div>
+</div>
+
+<div class="main uk-background-cover" style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)" id="top-page">
+  
+    <router-outlet uk-scrollspy="cls: uk-animation-slide-left; repeat: true"></router-outlet>
+    <app-footer></app-footer>
+
+</div>
