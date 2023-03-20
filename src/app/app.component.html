@@ -3,10 +3,16 @@
 
 
 
-<ng-container *ngIf="isLoginScreen; else mainScreen">
+<ng-container *ngIf="isLoginScreen">
     <app-login></app-login>
 </ng-container>
 
-<ng-template #mainScreen>
+
+<ng-container *ngIf="isAdminScreen">
+    <router-outlet></router-outlet>
+</ng-container>
+
+
+<ng-container *ngIf="!isLoginScreen && !isAdminScreen">
     <app-sidenav></app-sidenav>
-</ng-template>
+</ng-container>

@@ -20,6 +20,7 @@ import { FaqComponent } from './views/faq/faq.component';
 import { TentangKamiComponent } from './views/tentang-kami/tentang-kami.component';
 import { LoginComponent } from './views/login/login.component';
 import { SidenavComponent } from './views/base/sidenav/sidenav.component';
+import { MenuComponent } from './views-admin/base/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SidenavComponent } from './views/base/sidenav/sidenav.component';
     FaqComponent,
     TentangKamiComponent,
     LoginComponent,
-    SidenavComponent
+    SidenavComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserAnimationsModule,

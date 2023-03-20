@@ -4,8 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ServerApiService {
-  // public API = 'http://localhost:8080'
-  public API = 'https://api.desawisatacisaat.com/'
+  public API = 'http://localhost:8081'
+  // public API = 'https://sejarahjoang.api.desawisatacisaat.com'
+  // public API = 'https://api.desawisatacisaat.com/'
 
   constructor() { }
 

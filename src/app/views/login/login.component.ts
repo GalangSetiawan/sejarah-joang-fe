@@ -58,7 +58,7 @@ export class LoginComponent  implements OnInit {
   }
 
   public reloadPage(): void {
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/admin/home');
   }
 
   public logout(): void {

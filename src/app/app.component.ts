@@ -9,7 +9,8 @@ import { ActivatedRoute, Router } from '@angular/router'
 export class AppComponent implements OnInit {
   public sidebarShow: boolean = false;
   public isLoginScreen:boolean = false;
-
+  public isAdminScreen:boolean = false;
+  
   constructor(
     private activatedRoute: ActivatedRoute,
     private route: Router,
@@ -21,7 +22,15 @@ export class AppComponent implements OnInit {
         }else{
           this.isLoginScreen = false;
         }
-    });
+
+        if(this.route.url.includes('admin')){
+          this.isAdminScreen = true;
+        }else{
+          this.isAdminScreen = false;
+        }
+
+        
+      });
   }
 
   ngOnInit() {
