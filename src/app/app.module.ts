@@ -5,6 +5,22 @@ import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
+import { authInterceptorProviders } from './_helpers/auth.interceptor.service';
+import { CommonModule, CurrencyPipe } from '@angular/common';
+
+
+import {TableModule} from 'primeng/table';
+import {ToastModule} from 'primeng/toast';
+import {CalendarModule} from 'primeng/calendar';
+import {SliderModule} from 'primeng/slider';
+import {MultiSelectModule} from 'primeng/multiselect';
+import {ContextMenuModule} from 'primeng/contextmenu';
+import {DialogModule} from 'primeng/dialog';
+import {ButtonModule} from 'primeng/button';
+import {DropdownModule} from 'primeng/dropdown';
+import {ProgressBarModule} from 'primeng/progressbar';
+import {InputTextModule} from 'primeng/inputtext';
+
 
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { PostsComponent } from './views/posts/posts.component';
@@ -21,6 +37,7 @@ import { TentangKamiComponent } from './views/tentang-kami/tentang-kami.componen
 import { LoginComponent } from './views/login/login.component';
 import { SidenavComponent } from './views/base/sidenav/sidenav.component';
 import { MenuComponent } from './views-admin/base/menu/menu.component';
+
 
 @NgModule({
   declarations: [
@@ -47,10 +64,22 @@ import { MenuComponent } from './views-admin/base/menu/menu.component';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    AppRoutingModule,
+    CommonModule,
+    
+    TableModule,
+    CalendarModule,
+		SliderModule,
+		DialogModule,
+		MultiSelectModule,
+		ContextMenuModule,
+		DropdownModule,
+		ButtonModule,
+		ToastModule,
+    InputTextModule,
+    ProgressBarModule
 
   ],
-  providers: [],
+  providers: [authInterceptorProviders,CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

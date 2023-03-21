@@ -2,8 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router'
 import { AuthService } from '../../services/auth.service';
 import { TokenStorageService } from '../../services/token-storage.service';
+import { MessageService } from 'primeng/api';
+
+declare var UIkit: any;
 
 @Component({
+  providers: [MessageService],
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
@@ -24,7 +28,9 @@ export class LoginComponent  implements OnInit {
     public activatedRoute: ActivatedRoute,
     public authService: AuthService, 
     public router: Router,
-    public tokenStorage: TokenStorageService
+    public tokenStorage: TokenStorageService,
+    private messageService: MessageService
+
   ){}
   
 
@@ -49,8 +55,13 @@ export class LoginComponent  implements OnInit {
         this.isLoggedIn = true;
         this.roles = this.tokenStorage.getUser().roles;
         this.reloadPage();
+        UIkit.notification("login berhasil", {status: 'primary'})
+        // this.messageService.add({severity:'success', summary: 'Success', detail:'login success'});
+
       },
       err => {
+        UIkit.notification("login gagal", {status: 'danger'})
+        // this.messageService.add({severity:'error', summary: 'Error', detail:'login gagal'});
         this.errorMessage = err.error.message;
         this.isLoginFailed = true;
       }
