@@ -1,10 +1,10 @@
-<div class="uk-background-cover uk-light font-size-general" uk-height-viewport data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" uk-img>
+<div class="uk-background-cover uk-light font-size-general" style="height: 50vh;" data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" uk-img>
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match pt-5" uk-grid>
         <div>
             <div class="uk-card uk-card-body">
                 <h3 class="uk-card-title">
-                    <div class="uk-light">
-                        <span uk-icon="arrow-left"></span>
+                    <div class="uk-light"  [routerLink]="['../']" >
+                        <span><img src="assets/img/icon/arrow.png" class="" alt="" style="width: 50px;" ></span>
                         Kembali
                     </div>
                 </h3>
@@ -18,11 +18,14 @@
             </div>
         </div>
     </div>
+</div>
 
+
+<section class=" uk-background-cover"  style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)">
     <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
         <div class="uk-width-auto@m">
             <div class="uk-card gs-background-orange-1 p-2">
-                <span><img src="assets/img/icon/edukasi.png" class="" alt="" style="width: 50px;" ></span>
+                <span><img src="assets/img/icon/jam-oprasional.png" class="" alt="" style="width: 50px;" ></span>
             </div>
         </div>
         
@@ -31,98 +34,60 @@
         </div>
         <div class="uk-width-1-3@m">
             <div class="uk-card gs-background-coklat-1 p-2">
-                <h5 class="uk-position-center">
+                <h5 class="uk-position-center uk-light">
                     <b>JAM OPERASIONAL</b>
                 </h5>
             </div>
         </div>
     </div>
 
-    <div class="uk-text-center uk-grid-collapse uk-background-cover" uk-grid uk-height-match="target: > div > .uk-card" style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)">
-
-        <div class="uk-width-expand@m uk-text-center uk-padding">
 
 
-            <div class="uk-grid-match uk-child-width-expand@s uk-text-center uk-grid-collapse gs-border-orange" uk-grid>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default p-2">Jam buka/operasional museum Sejarah joang</div>
-                 </div>
-            </div>
-
-            <div class="uk-grid-match uk-child-width-expand@s uk-text-center uk-grid-collapse" uk-grid>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        Senin
-                        <br><br><span style="zoom: 0.9;">&nbsp;</span>
-
-                        <div class="mt-3 p-2 uk-card-secondary"> LIBUR</div>
-                    </div>
-                 </div>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        Selasa
-                        <br><br><span style="zoom: 0.9;">08:00 - 16:00</span>
-
-                        <div class="mt-3 p-2 gs-background-orange-1"> BUKA</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        Rabu
-                        <br><br><span style="zoom: 0.9;">08:00 - 16:00</span>
-
-                        <div class="mt-3 p-2 gs-background-orange-1"> BUKA</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        Kamis
-                        <br><br><span style="zoom: 0.9;">08:00 - 16:00</span>
-
-                        <div class="mt-3 p-2 gs-background-orange-1"> BUKA</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        Jumat
-                        <br><br><span style="zoom: 0.9;">08:00 - 16:00</span>
-
-                        <div class="mt-3 p-2 gs-background-orange-1"> BUKA</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        Sabtu
-                        <br><br><span style="zoom: 0.9;">08:00 - 16:00</span>
-
-                        <div class="mt-3 p-2 gs-background-orange-1"> BUKA</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        Minggu
-                        <br><br><span style="zoom: 0.9;">08:00 - 16:00</span>
-
-                        <div class="mt-3 p-2 gs-background-orange-1"> BUKA</div>
-                    </div>
-                </div>
-            </div>
-            
+    <div class="uk-flex uk-flex-center">
+        <div class="uk-card uk-card-body">
+            <table class="gs-table-jam-operasional font-size-general" >
+                <tr>
+                    <th colspan="7">Jam buka/operasional museum Sejarah joang</th>
+                </tr>
+                <tr>
+                    <td style="width:150px">Senin</td>
+                    <td style="width:150px">Selasa</td>
+                    <td style="width:150px">Rabu</td>
+                    <td style="width:150px">Kamis</td>
+                    <td style="width:150px">Jumat</td>
+                    <td style="width:150px">Sabtu</td>
+                    <td style="width:150px">Minggu</td>
+                </tr>
+                <tr>
+                    <td style="height:100px"> - </td>
+                    <td>08:00 - 16:00</td>
+                    <td>08:00 - 16:00</td>
+                    <td>08:00 - 16:00</td>
+                    <td>08:00 - 16:00</td>
+                    <td>08:00 - 16:00</td>
+                    <td>08:00 - 16:00</td>
+                </tr>
+                <tr class="gs-background-orange-1">
+                    <td class="p-2 gs-background-coklat-1">LIBUR</td>
+                    <td class="p-2">BUKA</td>
+                    <td class="p-2">BUKA</td>
+                    <td class="p-2">BUKA</td>
+                    <td class="p-2">BUKA</td>
+                    <td class="p-2">BUKA</td>
+                    <td class="p-2">BUKA</td>
+                </tr>
+            </table>
         </div>
-    
     </div>
 
     <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
-        
         <div class="uk-width-1-3@m">
             <div class="uk-card gs-background-coklat-1 p-2">
-                <h5 class="uk-position-center">
+                <h5 class="uk-position-center uk-light">
                     <b>HARGA TIKET</b>
                 </h5>
             </div>
         </div>
-
-        
         
         <div class="uk-width-expand@m">
             <div class="uk-card gs-background-orange-1 p-2"></div>
@@ -130,59 +95,51 @@
 
         <div class="uk-width-auto@m">
             <div class="uk-card gs-background-orange-1 p-2">
-                <span><img src="assets/img/icon/edukasi.png" class="" alt="" style="width: 50px;" ></span>
+                <span class=""><img src="assets/img/icon/tiket.png" class="" alt="" style="width: 50px;" ></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="uk-flex uk-flex-center">
+        <div class="uk-card uk-card-body">
+            <table class="gs-table-harga-tiket font-size-general">
+                <tr>
+                    <th colspan="4">Harga tiket masuk museum Sejarah joang</th>
+                </tr>
+                <tr>
+                    <td style="width:250px; height: 80px;">Dewasa</td>
+                    <td style="width:250px">Mahasiswa</td>
+                    <td style="width:250px">Pelajar</td>
+                    <td style="width:250px">Rombongan</td>
+                </tr>
+                <tr class="gs-background-orange-1">
+                    <td class="p-2">Rp. 5000</td>
+                    <td class="p-2">Rp. 3000</td>
+                    <td class="p-2">Rp. 2000</td>
+                    <td class="p-2 gs-background-coklat-1">ROMBONGAN MINIMAL 30 ORANG DAPAT DISKON 25%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-auto@m">
+            <div class="uk-card gs-background-orange-1 p-2">
+                <span><img src="assets/img/icon/kontak.png" class="" alt="" style="width: 50px;" ></span>
             </div>
         </div>
         
-    </div>
-
-    <div class="uk-text-center uk-grid-collapse uk-background-cover" uk-grid uk-height-match="target: > div > .uk-card" style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)">
-
-        <div class="uk-width-expand@m uk-text-center uk-padding">
-
-
-            <div class="uk-grid-match uk-child-width-expand@s uk-text-center uk-grid-collapse gs-border-orange" uk-grid>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default p-2">Harga tiket masuk</div>
-                 </div>
-            </div>
-
-            <div class="uk-grid-match uk-child-width-expand@s uk-text-center uk-grid-collapse" uk-grid>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        <b>DEWASA</b>
-                        
-                        <div class="mt-3 p-2 gs-background-orange-1"> Rp.5000 <br> &nbsp;</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        <b>MAHASISWA</b>
-
-                        <div class="mt-3 p-2 gs-background-orange-1"> Rp.3000 <br> &nbsp;</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        <b>PELAJAR</b>
-
-                        <div class="mt-3 p-2 gs-background-orange-1"> Rp.2000 <br> &nbsp;</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="gs-border-orange uk-card uk-card-default uk-padding-remove pt-4 uk-card-body">
-                        <b>ROMBONGAN</b>
-                        
-                        <div class="mt-3 p-2 uk-card-secondary"><small> ROMBONGAN MINIMAL 30 ORANG DAPAT DISKON 25%</small></div>
-                    </div>
-                </div>
-                
-            </div>
-            
+        <div class="uk-width-expand@m">
+            <div class="uk-card gs-background-orange-1 p-2"></div>
         </div>
-    
+        <div class="uk-width-1-3@m">
+            <div class="uk-card gs-background-coklat-1 p-2">
+                <h5 class="uk-position-center uk-light">
+                    <b>KONTAK</b>
+                </h5>
+            </div>
+        </div>
     </div>
 
     
-</div>
-
+</section>
