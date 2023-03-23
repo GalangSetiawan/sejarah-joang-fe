@@ -21,6 +21,7 @@ import { FaqComponent } from './views/faq/faq.component';
 import { TentangKamiComponent } from './views/tentang-kami/tentang-kami.component';
 import { LoginComponent } from './views/login/login.component';
 import { MenuComponent } from './views-admin/base/menu/menu.component';
+import { InformasiComponent } from './views/informasi/informasi.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: "snk", component: SnkComponent },
   { path: "faq", component: FaqComponent },
   { path: "tentang", component: TentangKamiComponent },
+  { path: "informasi", component: InformasiComponent },
 
   {
     path: 'admin',
@@ -50,6 +52,13 @@ const routes: Routes = [
         path: 'home',
         loadChildren: () => import('../app/views-admin/mst-general/mst-general.module').then(x => x.MstGeneralModule)
       },
+      { 
+        path: 'post',
+        loadChildren: () => import('../app/views-admin/mst-post/mst-post.module').then(x => x.MstPostModule)
+      },
+
+
+
       // { path: 'admin/sejarah', loadChildren: './admin-pages/sejarah/sejarah.module#SejarahModule'},
       // { path: 'admin/contact', loadChildren: './admin-pages/contact/contact.module#ContactModule'},
       // { path: 'admin/web-preferences', loadChildren: './admin-pages/web-preferences/web-preferences.module#WebPreferencesModule'},

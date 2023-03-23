@@ -23,7 +23,7 @@ export class FreeDataService {
       return this.http.get(this.baseUrl);
     }
 
-    public getById(id){
+    public getById(id:number){
       return this.http.get(this.baseUrl + '/' +id);
     }
 

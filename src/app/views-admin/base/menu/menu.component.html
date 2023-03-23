@@ -1,51 +1,43 @@
-<nav class="uk-navbar-container">
-    <div class="uk-container">
-        <div uk-navbar>
 
-            <div class="uk-navbar-left">
 
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li>
-                        <a href="#">Parent</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-header">Header</li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Item</a></li>
-                </ul>
 
-            </div>
-            <div class="uk-navbar-right">
-
-                <ul class="uk-navbar-nav">
-                    <li>
-                        <a href="#">Parent</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a (click)="logout()">Logout</a></li>
-                                <li class="uk-nav-header">Header</li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
+<div class="uk-grid-collapse" uk-grid>
+    <div class="uk-width-auto@m uk-background-secondary" uk-height-viewport>
+        <div class="uk-card pt-5">
+            <p-megaMenu [model]="items" orientation="vertical" ></p-megaMenu>
         </div>
     </div>
-</nav>
+    <div class="uk-width-expand@m" >
+        <nav class="uk-navbar-container">
+            <div class="uk-container">
+                <div uk-navbar>
+        
+                    
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="#">{{ currentUser.email }}</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a (click)="logout()">Logout</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </div>
+        </nav>
 
-<router-outlet></router-outlet>
+        <div class="uk-card p-3">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+
+
+
+

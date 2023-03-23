@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators, FormGroup, FormBuilder } from '@angular/forms';
+import { SelectItem } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { ProductService } from '../../services/dummy-service/dummy-product.service';
+import { Product } from '../../services/dummy-service/dummy-product.model';
 import { FreeDataService } from 'src/app/services/free-data/free-data.service';
 import * as lzstring from 'lz-string';
 import { ObjectHelper } from 'src/app/_helpers/object-helper';
@@ -11,16 +13,21 @@ import { ObjectHelper } from 'src/app/_helpers/object-helper';
 
 @Component({
   providers: [MessageService],
-  selector: 'app-mst-general',
-  templateUrl: './mst-general.component.html',
-  styleUrls: ['./mst-general.component.scss']
+  selector: 'app-mst-post',
+  templateUrl: './mst-post.component.html',
+  styleUrls: ['./mst-post.component.scss']
 })
-export class MstGeneralComponent implements OnInit {
+export class MstPostComponent implements OnInit {
 
   public inputForm:FormGroup;
   public pengaturanUmum:any = null;
-  private ngUnsubscribe: Subject<boolean> = new Subject();
 
+
+  public products1: Product[];
+  public products2: Product[];
+  public statuses: SelectItem[];
+  public clonedProducts: { [s: string]: Product; } = {};
+  private ngUnsubscribe: Subject<boolean> = new Subject();
 
   constructor(
     private fb: FormBuilder,
@@ -32,7 +39,15 @@ export class MstGeneralComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.getDataById(1);
+
+      this.getDataById(1);
+
+
+
+      this.productService.getProductsSmall().then(data => this.products1 = data);
+      this.productService.getProductsSmall().then(data => this.products2 = data);
+
+      this.statuses = [{label: 'In Stock', value: 'INSTOCK'},{label: 'Low Stock', value: 'LOWSTOCK'},{label: 'Out of Stock', value: 'OUTOFSTOCK'}]
   }
 
 
@@ -49,6 +64,27 @@ export class MstGeneralComponent implements OnInit {
     this.sendData(this.inputForm.value);
   }
 
+
+
+
+  onRowEditInit(product: Product) {
+    this.clonedProducts[product.id] = {...product};
+  }
+
+  onRowEditSave(product: Product) {
+      if (product.price > 0) {
+          delete this.clonedProducts[product.id];
+          this.messageService.add({severity:'success', summary: 'Success', detail:'Product is updated'});
+      }  
+      else {
+          this.messageService.add({severity:'error', summary: 'Error', detail:'Invalid Price'});
+      }
+  }
+
+  onRowEditCancel(product: Product, index: number) {
+      this.products2[index] = this.clonedProducts[product.id];
+      delete this.products2[product.id];
+  }
 
 
   sendData(data){
@@ -76,6 +112,7 @@ export class MstGeneralComponent implements OnInit {
     }
     
   }
+
 
 
   public getDataById(id){

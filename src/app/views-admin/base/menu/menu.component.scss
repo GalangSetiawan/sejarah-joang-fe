@@ -1,0 +1,31 @@
+:host ::ng-deep .p-megamenu {
+    padding: 0.5rem;
+    background: transparent;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+}
+
+
+
+:host ::ng-deep .p-megamenu .p-megamenu-root-list > .p-menuitem > .p-menuitem-link:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: none !important
+}
+
+
+:host ::ng-deep .p-megamenu .p-megamenu-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text {
+    color: white;
+}
+
+:host ::ng-deep .p-megamenu .p-megamenu-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-icon {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+
+:host ::ng-deep .p-megamenu.p-megamenu-vertical {
+    width: 15.5rem;
+    // padding: 0.25rem 0;
+}

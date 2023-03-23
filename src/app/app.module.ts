@@ -20,6 +20,7 @@ import {ButtonModule} from 'primeng/button';
 import {DropdownModule} from 'primeng/dropdown';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {InputTextModule} from 'primeng/inputtext';
+import { MegaMenuModule } from 'primeng/megamenu';
 
 
 import { DashboardComponent } from './views/dashboard/dashboard.component';
@@ -37,6 +38,7 @@ import { TentangKamiComponent } from './views/tentang-kami/tentang-kami.componen
 import { LoginComponent } from './views/login/login.component';
 import { SidenavComponent } from './views/base/sidenav/sidenav.component';
 import { MenuComponent } from './views-admin/base/menu/menu.component';
+import { InformasiComponent } from './views/informasi/informasi.component';
 
 
 @NgModule({
@@ -57,6 +59,7 @@ import { MenuComponent } from './views-admin/base/menu/menu.component';
     LoginComponent,
     SidenavComponent,
     MenuComponent,
+    InformasiComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -76,7 +79,8 @@ import { MenuComponent } from './views-admin/base/menu/menu.component';
 		ButtonModule,
 		ToastModule,
     InputTextModule,
-    ProgressBarModule
+    ProgressBarModule,
+    MegaMenuModule,
 
   ],
   providers: [authInterceptorProviders,CurrencyPipe],

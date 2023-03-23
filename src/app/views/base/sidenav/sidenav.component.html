@@ -1,3 +1,11 @@
+
+
+<div class="uk-position-top-right uk-position-fixed faq-container ">
+   <a [routerLink]="['/faq']" class="text-light">FAQ</a> 
+</div>
+
+
+
 <!-- menu for small screen -->
 <div class="show-on-small-screen">
     <div (click)="sidebarShow = !sidebarShow" class=" uk-position-top-left p-2 uk-background-secondary link-light uk-position-fixed uk-position-z-index">
@@ -11,15 +19,6 @@
 
 <!-- side menu for large screen -->
 <div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
-
-    <!-- <div class="uk-position-large uk-position-center-right uk-overlay show-on-large-screen" >
-        <a (click)="sidebarShow = !sidebarShow">
-            <span class="link-light"
-            uk-icon="icon: close; ratio: 2">
-            </span>
-        </a>
-    </div> -->
-
 
     <!-- button atas -->
     <div (click)="sidebarShow = !sidebarShow" class=" uk-position-top-left p-2 uk-background-secondary show-on-small-screen link-light uk-position-fixed uk-position-z-index">
@@ -88,6 +87,9 @@
                             <li [class.uk-active] = "setCurrentMenu('/tentang')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tentang')" [routerLink]="['/tentang']">Tentang kami</a>
                             </li>
+                            <li [class.uk-active] = "setCurrentMenu('/informasi')">
+                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/informasi')" [routerLink]="['/informasi']">Informasi</a>
+                            </li>
                             <li [class.uk-active] = "setCurrentMenu('/login')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/login')" [routerLink]="['/login']">Login</a>
                             </li>
@@ -109,9 +111,9 @@
                     </div>
                 </div>
                 
-                <div class="uk-width-auto@s  show-on-large-screen">
+                <div class="uk-width-auto@s show-on-large-screen">
                     <div class="uk-card uk-card-body ">
-                        <div (click)="sidebarShow = !sidebarShow" uk-toggle="target: #toggle-menu; animation: uk-animation-slide-left" class="">
+                        <div (click)="sidebarShow = !sidebarShow" class="">
                             <span class="link-light"
                                   uk-icon="icon: close; ratio: 2">
                             </span>

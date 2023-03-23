@@ -35,10 +35,13 @@ export class LoginComponent  implements OnInit {
   
 
   public ngOnInit() {
-    if (this.tokenStorage.getToken()) {
-      this.isLoggedIn = true;
-      this.roles = this.tokenStorage.getUser().roles;
-    }
+
+    this.logout();
+
+    // if (this.tokenStorage.getToken()) {
+    //   this.isLoggedIn = true;
+    //   this.roles = this.tokenStorage.getUser().roles;
+    // }
   }
 
   public  onSubmit(): void {
