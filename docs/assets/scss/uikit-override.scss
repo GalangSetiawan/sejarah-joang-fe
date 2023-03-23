@@ -1,0 +1,47 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Syne:wght@400;600&display=swap');
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family: 'Merriweather', serif !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Syne', serif !important;
+}
+
+a {
+    color: #D0502D !important;
+}
+
+.nf{
+    font-family: 'Merriweather', serif !important;
+}
+
+.hf{
+    font-family: 'Syne', serif !important;
+}
+
+.uk-card-primary{
+    background-color: #D0502D !important;
+    color: #fff !important;
+}
+
+
+.uk-text-primary{
+    color: #D0502D !important;
+}
+
+.uk-light{
+    color: #fff !important;
+}
+
+.uk-background-secondary{
+    background-color: #431E15 !important;
+}
+
+.uk-button-primary {
+    background-color: #D0502D !important;
+    color: #fff !important;
+}

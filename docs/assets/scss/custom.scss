@@ -1,0 +1,59 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Syne:wght@400;600&display=swap');
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family: 'Merriweather', serif !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Syne', serif !important;
+}
+
+a {
+    color: #D0502D !important;
+}
+
+.nf{
+    font-family: 'Merriweather', serif !important;
+}
+
+.hf{
+    font-family: 'Syne', serif !important;
+}
+
+
+.gs-color-primary{
+    color: #D0502D !important;
+}
+
+.gs-judul-menu{
+    padding: 20px;
+    color: white;
+    background-color: #D0502D;
+}
+
+.gs-background-white{
+    background-color: white;
+    color: black;
+}
+
+.gs-background-coklat-1{
+    background-color: #431E15;
+    color: white;
+}
+
+.gs-background-orange-1{
+    background-color: #D0502D;
+    color: white;
+}
+
+.gs-background-orange-2{
+    background-color: #D7742B;
+    color: white;
+}
+
+.gs-border-orange{
+    border: 2px solid #D7742B;
+}
