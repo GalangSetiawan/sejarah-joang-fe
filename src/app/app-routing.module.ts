@@ -31,7 +31,7 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: "edukasi", component: EdukasiComponent },
   { path: "dashboard", component: DashboardComponent },
-  { path: "post/:slug", component: PostsComponent },
+  { path: "post", component: PostsComponent },
   { path: "article/:slug", component: ArticleComponent },
   { path: "sejarah", component: SejarahComponent },
   { path: "koleksi", component: KoleksiComponent },
