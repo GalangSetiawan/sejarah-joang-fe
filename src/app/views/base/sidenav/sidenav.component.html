@@ -135,10 +135,10 @@
 <!-- content -->
 
 <div class="sidenav">
-  <div class="uk-background-secondary uk-card-default "  uk-height-viewport > 
+  <div class="bg-dark uk-card-default "  uk-height-viewport > 
 
       <a class="p-3" href="#top-page"  uk-scroll>
-          <img src="assets/img/belgium-wwii.png" alt="" >
+          <!-- <img src="assets/img/belgium-wwii.png" alt="" > -->
       </a>
 
       <div class="sidebar-open" >
@@ -150,9 +150,9 @@
   </div>
 </div>
 
-<div class="main uk-background-cover" style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)" id="top-page">
+<div class="main uk-background-cover uk-animation-toggle" style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)" id="top-page">
   
-    <router-outlet uk-scrollspy="cls: uk-animation-slide-left; repeat: true"></router-outlet>
+    <router-outlet></router-outlet>
     <app-footer></app-footer>
 
 </div>

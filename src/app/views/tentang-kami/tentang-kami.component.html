@@ -1,17 +1,218 @@
-<a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle>Open</a>
+<div class="uk-background-cover uk-light font-size-general" style="height: 50vh;" data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" uk-img>
+    <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match pt-5" uk-grid>
+        <div>
+            <div class="uk-card uk-card-body">
+                <h3 class="uk-card-title">
+                    <div class="uk-light"  [routerLink]="['../']" >
+                        <span><img src="assets/img/icon/arrow.png" class="" alt="" style="width: 50px;" ></span>
+                        Kembali
+                    </div>
+                </h3>
 
-<div id="offcanvas-slide" uk-offcanvas>
-    <div class="uk-offcanvas-bar">
-
-        <ul class="uk-nav uk-nav-default">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
-
+                <h3 class="uk-card-title mb-5">
+                    <button class="uk-button uk-button-primary uk-button-large uk-light">
+                        <b>Tentang kami</b>
+                    </button>
+                </h3>
+                <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae veniam ex, atque dolorum modi iusto ratione saepe labore earum ad? incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
     </div>
 </div>
+
+
+<section class=" uk-background-cover" >
+
+    <!-- Peresmian gedung header -->
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-auto">
+            <div class="uk-card gs-background-orange-2 p-2">
+                <span><img src="assets/img/icon/peresmian.png" class="" alt="" style="width: 50px;" ></span>
+            </div>
+        </div>
+        
+        <div class="uk-width-expand">
+            <div class="uk-card gs-background-orange-2 p-2"></div>
+        </div>
+        <div class="uk-width-1-3">
+            <div class="uk-card gs-background-coklat-1 p-2">
+                <h5 class="uk-position-center uk-light">
+                    <b>Peresmian gedung</b>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Peresmian gedung -->
+    <div class="uk-padding uk-grid-collapse uk-child-width-1-2@s uk-grid-match font-size-general" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="assets/img/background/peresmian.jpg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body uk-padding gs-background-orange-2">
+                <h3 class="uk-card-title uk-light">Media Right</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visi & Misi header -->
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-3">
+            <div class="uk-card gs-background-coklat-1 p-2">
+                <h5 class="uk-position-center uk-light">
+                    <b>Visi & Misi</b>
+                </h5>
+            </div>
+        </div>
+        
+        <div class="uk-width-expand">
+            <div class="uk-card gs-background-orange-1 p-2"></div>
+        </div>
+
+        <div class="uk-width-auto">
+            <div class="uk-card gs-background-orange-1 p-2">
+                <span class=""><img src="assets/img/icon/visi-misi.png" class="" alt="" style="width: 50px;" ></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visi & Misi -->
+    <div class="uk-child-width-1-2@m uk-padding uk-padding-remove-top pt-2 uk-grid-medium uk-grid-match font-size-general" uk-grid>
+        <div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <h3 class="uk-card-title uk-text-center uk-light">Visi</h3>
+                <p>Menjadi Museum yang representatif tentang sejarah perjuangan kemerdekaan yang meng eksplorasi sejarah perkembangan kota, budaya, masyarakat dan politiknya untuk menjadi kebanggaan warga Jakarta.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card gs-background-coklat-1 uk-card-body">
+                <h3 class="uk-card-title uk-text-center uk-light">Misi</h3>
+                <ul class="uk-list uk-list-decimal">
+                    <li>Meningkatkan kesadaran masyarakat tentang Sejarah Perjuangan Kemerdekaan Indonesia</li>
+                    <li>Untuk membuat pameran yang berkaitan dengan Sejarah Perjuangan Kemerdekaan Indonesia.</li>
+                    <li>Untuk melestarikan dan menjaga semua artefak, barang-barang bersejarah dan koleksi museum.</li>
+                    <li>Memberiklan alur cerita sejarah yang tepat melalui IT.</li>
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+    
+    <!-- Kegiatan museum header -->
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-auto">
+            <div class="uk-card gs-background-orange-2 p-2">
+                <span><img src="assets/img/icon/kegiatan.png" class="" alt="" style="width: 50px;" ></span>
+            </div>
+        </div>
+        
+        <div class="uk-width-expand">
+            <div class="uk-card gs-background-orange-2 p-2"></div>
+        </div>
+        <div class="uk-width-1-3">
+            <div class="uk-card gs-background-coklat-1 p-2">
+                <h5 class="uk-position-center uk-light">
+                    <b>Kegiatan museum</b>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kegiatan museum -->
+    <div class="uk-padding">
+
+        <div class="uk-child-width-1-4@s uk-grid-collapse uk-text-center uk-light" uk-grid>
+            <div class="uk-background-cover" style="background-image: url(assets/img/background/penyuluhan.jpg);" >
+                <div class="gs-background-transparent-gradient uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle">
+                    <p class="uk-h4">PENYULUHAN <br> MUSEUM JOANG</p>
+                </div>
+            </div>
+
+            <div class="uk-background-cover" style="background-image: url(assets/img/background/pekan.jpg);" >
+                <div class="gs-background-transparent-gradient uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle">
+                    <p class="uk-h4">PEKAN  <br> MUSEUM JOANG</p>
+                </div>
+            </div>
+
+            <div class="uk-background-cover" style="background-image: url(assets/img/background/napaktilas.jpg);" >
+                <div class="gs-background-transparent-gradient uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle">
+                    <p class="uk-h4">NAPAK TILAS  <br> PROKLAMASI</p>
+                </div>
+            </div>
+
+            <div class="uk-background-cover" style="background-image: url(assets/img/background/pameran.jpg);" >
+                <div class="gs-background-transparent-gradient uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle">
+                    <p class="uk-h4">PAMERAN TETAP</p>
+                </div>
+            </div>
+           
+        </div>
+
+
+   
+    </div>
+
+
+    <!-- Anggota yayasan header -->
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-3">
+            <div class="uk-card gs-background-coklat-1 p-2">
+                <h5 class="uk-position-center uk-light">
+                    <b>Anggota yayasan</b>
+                </h5>
+            </div>
+        </div>
+        
+        <div class="uk-width-expand">
+            <div class="uk-card gs-background-orange-2 p-2"></div>
+        </div>
+
+        <div class="uk-width-auto">
+            <div class="uk-card gs-background-orange-2 p-2">
+                <span class=""><img src="assets/img/icon/anggota.png" class="" alt="" style="width: 50px;" ></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Anggota yayasan -->
+    <div class="uk-padding">
+
+        <div class="uk-child-width-1-4@s uk-grid-collapse uk-text-center uk-light" uk-grid>
+
+            <div class="uk-background-cover" style="background-image: url(assets/img/background/joang.jpg);" >
+                <div class="gs-background-transparent-gradient uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle">
+                    <p class="uk-h4">MUSEUM JOANG 45 <br> JAKARTA</p>
+                </div>
+            </div>
+
+            <div class="uk-background-cover" style="background-image: url(assets/img/background/fatahilah.jpg);" >
+                <div class="gs-background-transparent-gradient uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle">
+                    <p class="uk-h4">MUSEUM  <br> FATAHILAH</p>
+                </div>
+            </div>
+
+            <div class="uk-background-cover" style="background-image: url(assets/img/background/prasasti.jpg);" >
+                <div class="gs-background-transparent-gradient uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle">
+                    <p class="uk-h4">MUSEUM <br> PRASATI</p>
+                </div>
+            </div>
+
+            <div class="uk-background-cover" style="background-image: url(assets/img/background/tamrin.jpg);" >
+                <div class="gs-background-transparent-gradient uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle">
+                    <p class="uk-h4">MUSEUM <br> MH. THAMRIN</p>
+                </div>
+            </div>
+
+
+           
+        </div>
+
+
+   
+    </div>
+
+    
+</section>

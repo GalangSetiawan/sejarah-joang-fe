@@ -58,14 +58,37 @@ a {
     border: 2px solid #D7742B;
 }
 
-.background-transparent-gradient{
+.gs-background-transparent-gradient{
     background-image: linear-gradient(rgba(67, 30, 21, 0.4), rgba(67, 30, 21, 0.7));
 }
 
-.background-transparent-gradient-90{
-    background-image: linear-gradient(rgba(67, 30, 21, 0.8), rgba(67, 30, 21, 0.9));
+.background-filter-sephia{
+    filter: sepia();
+}
+
+.gs-background-transparent-gradient-90{
+    background-image: linear-gradient(rgba(67, 30, 21, 0.3), rgba(67, 30, 21, 0.4));
 }
 
 .background-transparent-black{
   background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.7));
 }
+
+.gs-background-transparent-gradient:hover{
+    background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.7));
+}
+
+
+
+.gs-dashbord-menu{
+    height: 300px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .gs-dashbord-menu{
+        height: 150px;
+    }
+  
+  }

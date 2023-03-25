@@ -1,11 +1,11 @@
 
 
   
-<div class="" uk-height-viewport >
+<div class="" uk-height-viewport uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
 	
-	<div class="uk-child-width-1-2 uk-grid-match uk-grid-collapse uk-background-cover" data-src="assets/img/background/dashboard.jpg" uk-img="loading: eager"  uk-grid uk-height-viewport>
+	<div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-grid-match uk-grid-collapse uk-background-cover" data-src="assets/img/background/dashboard.jpg" uk-img="loading: eager"  uk-grid uk-height-viewport>
 		<div>
-			<div class="uk-card uk-card-body background-transparent-gradient " uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+			<div class="uk-card uk-card-body gs-background-transparent-gradient " uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
 					
 					
 					<div class="uk-position-center  uk-padding-large ">
@@ -41,7 +41,7 @@
 
 			</div>
 		</div>
-		<div>
+		<div class="show-on-large-screen">
 			<div class="uk-card uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true" >
 				
 			</div>
@@ -51,7 +51,7 @@
 
 
 
-<div class="uk-child-width-1-2@s uk-grid-collapse uk-grid-match font-size-general" uk-grid id="down-content" style="margin-top: -2px;">
+<div class="uk-child-width-1-2@s uk-grid-collapse uk-grid-match font-size-general" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" uk-grid id="down-content">
     <div>
         <div class="uk-card">
 			
@@ -59,9 +59,9 @@
 
 				<!-- Edukasi -->
 				<div  class="uk-background-cover" style="background-image: url(assets/img/background/edukasi.jpg); height:150px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-edukasi background-transparent-gradient" uk-toggle="target: .toggle-edukasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+					<div class="uk-card uk-card-body toggle-edukasi gs-background-transparent-gradient" uk-toggle="target: .toggle-edukasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
 						<div class="row uk-padding-small">
-							<div class="col-md-8 uk-text-left ">
+							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
 									<a class="uk-link-reset" style="color : #E0DED2 !important" [routerLink]="['/edukasi']">
 										Edukasi
@@ -70,7 +70,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right ">
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/edukasi.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -90,9 +90,9 @@
 
 				<!-- Koleksi -->
 				<div  class="uk-background-cover" style="background-image: url(assets/img/background/koleksi.jpg); height:150px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-koleksi background-transparent-gradient" uk-toggle="target: .toggle-koleksi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+					<div class="uk-card uk-card-body toggle-koleksi gs-background-transparent-gradient" uk-toggle="target: .toggle-koleksi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
 						<div class="row uk-padding-small">
-							<div class="col-md-8 uk-text-left ">
+							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
 									<a class="uk-link-reset" style="color : #E0DED2 !important" [routerLink]="['/koleksi']">
 										Koleksi
@@ -101,7 +101,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right ">
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/koleksi.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -120,8 +120,8 @@
 
 				<!-- Tentang kami -->
 				<div  class="uk-background-cover" style="background-image: url(assets/img/background/tentang.jpg); height:150px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-tentang background-transparent-gradient" uk-toggle="target: .toggle-tentang;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" > <div class="row uk-padding-small">
-							<div class="col-md-8 uk-text-left ">
+					<div class="uk-card uk-card-body toggle-tentang gs-background-transparent-gradient" uk-toggle="target: .toggle-tentang;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" > <div class="row uk-padding-small">
+							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
 									<a class="uk-link-reset" style="color : #E0DED2 !important" [routerLink]="['/tentang']">
 										Tentang kami
@@ -130,7 +130,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right ">
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/tentang.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -148,9 +148,9 @@
 
 				<!-- Informasi -->
 				<div  class="uk-background-cover" style="background-image: url(assets/img/background/informasi.jpg); height:150px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-informasi background-transparent-gradient" uk-toggle="target: .toggle-informasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+					<div class="uk-card uk-card-body toggle-informasi gs-background-transparent-gradient" uk-toggle="target: .toggle-informasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
 						<div class="row uk-padding-small">
-							<div class="col-md-8 uk-text-left ">
+							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
 									<a class="uk-link-reset" style="color : #E0DED2 !important" [routerLink]="['/informasi']">
 										Informasi
@@ -159,7 +159,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right ">
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/informasi.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -186,10 +186,10 @@
 			<div class="uk-child-width-1-1 uk-grid-match uk-grid-collapse" uk-grid>
 				
 				<!-- Denah gedung -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/denah.jpg); height:300px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-denah background-transparent-gradient" uk-toggle="target: .toggle-denah;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+				<div  class="uk-background-cover gs-dashbord-menu" style="background-image: url(assets/img/background/denah.jpg); overflow: hidden;">
+					<div class="uk-card uk-card-body toggle-denah gs-background-transparent-gradient" uk-toggle="target: .toggle-denah;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
 						<div class="row uk-padding-small">
-							<div class="col-md-8 uk-text-left ">
+							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
 									<a class="uk-link-reset" style="color : #E0DED2 !important" [routerLink]="['/denah']">
 										Denah gedung
@@ -198,7 +198,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right ">
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/denah.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -217,10 +217,10 @@
 
 
 				<!-- Berita -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/berita.jpg); height:300px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-berita background-transparent-gradient" uk-toggle="target: .toggle-berita;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+				<div  class="uk-background-cove gs-dashbord-menu" style="background-image: url(assets/img/background/berita.jpg); overflow: hidden;">
+					<div class="uk-card uk-card-body toggle-berita gs-background-transparent-gradient" uk-toggle="target: .toggle-berita;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
 						<div class="row uk-padding-small">
-							<div class="col-md-8 uk-text-left ">
+							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
 									<a class="uk-link-reset" style="color : #E0DED2 !important" [routerLink]="['/post', '']">
 										Berita
@@ -229,7 +229,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right ">
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/berita.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
