@@ -22,11 +22,13 @@ import { TentangKamiComponent } from './views/tentang-kami/tentang-kami.componen
 import { LoginComponent } from './views/login/login.component';
 import { MenuComponent } from './views-admin/base/menu/menu.component';
 import { InformasiComponent } from './views/informasi/informasi.component';
+import { EdukasiComponent } from './views/edukasi/edukasi.component';
 
 
 const routes: Routes = [
   { path: "", redirectTo: "dashboard", pathMatch: "full" },
   { path: "login", component: LoginComponent },
+  { path: "edukasi", component: EdukasiComponent },
   { path: "dashboard", component: DashboardComponent },
   { path: "post/:slug", component: PostsComponent },
   { path: "article/:slug", component: ArticleComponent },

@@ -39,6 +39,7 @@ import { LoginComponent } from './views/login/login.component';
 import { SidenavComponent } from './views/base/sidenav/sidenav.component';
 import { MenuComponent } from './views-admin/base/menu/menu.component';
 import { InformasiComponent } from './views/informasi/informasi.component';
+import { EdukasiComponent } from './views/edukasi/edukasi.component';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { InformasiComponent } from './views/informasi/informasi.component';
     SidenavComponent,
     MenuComponent,
     InformasiComponent,
+    EdukasiComponent,
   ],
   imports: [
     BrowserAnimationsModule,
