@@ -40,6 +40,7 @@ import { SidenavComponent } from './views/base/sidenav/sidenav.component';
 import { MenuComponent } from './views-admin/base/menu/menu.component';
 import { InformasiComponent } from './views/informasi/informasi.component';
 import { EdukasiComponent } from './views/edukasi/edukasi.component';
+import { DenahComponent } from './views/denah/denah.component';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { EdukasiComponent } from './views/edukasi/edukasi.component';
     MenuComponent,
     InformasiComponent,
     EdukasiComponent,
+    DenahComponent,
   ],
   imports: [
     BrowserAnimationsModule,

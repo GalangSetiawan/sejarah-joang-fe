@@ -23,6 +23,7 @@ import { LoginComponent } from './views/login/login.component';
 import { MenuComponent } from './views-admin/base/menu/menu.component';
 import { InformasiComponent } from './views/informasi/informasi.component';
 import { EdukasiComponent } from './views/edukasi/edukasi.component';
+import { DenahComponent } from './views/denah/denah.component';
 
 
 const routes: Routes = [
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: "faq", component: FaqComponent },
   { path: "tentang", component: TentangKamiComponent },
   { path: "informasi", component: InformasiComponent },
+  { path: "denah", component: DenahComponent },
 
   {
     path: 'admin',
