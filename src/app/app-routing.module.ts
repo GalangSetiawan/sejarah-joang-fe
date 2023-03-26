@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: "koleksi", component: KoleksiComponent },
   { path: "benda-sejarah", component: BendaBersejarahComponent },
   { path: "tokoh-sejarah", component: TokohSejarahComponent },
-  { path: "kendaraan-sejarah", component: KendaraanBersejarahComponent },
+  { path: "kendaraan-sejarah/:slug", component: KendaraanBersejarahComponent },
   { path: "snk", component: SnkComponent },
   { path: "faq", component: FaqComponent },
   { path: "tentang", component: TentangKamiComponent },
@@ -60,8 +60,6 @@ const routes: Routes = [
         path: 'post',
         loadChildren: () => import('../app/views-admin/mst-post/mst-post.module').then(x => x.MstPostModule)
       },
-
-
 
       // { path: 'admin/sejarah', loadChildren: './admin-pages/sejarah/sejarah.module#SejarahModule'},
       // { path: 'admin/contact', loadChildren: './admin-pages/contact/contact.module#ContactModule'},

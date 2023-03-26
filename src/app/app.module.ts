@@ -8,6 +8,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { authInterceptorProviders } from './_helpers/auth.interceptor.service';
 import { CommonModule, CurrencyPipe } from '@angular/common';
 
+import { PipesModule } from 'src/app/_helpers/html-pipe/html-pipe.module'
+
 
 import {TableModule} from 'primeng/table';
 import {ToastModule} from 'primeng/toast';
@@ -73,6 +75,8 @@ import { DenahComponent } from './views/denah/denah.component';
     AppRoutingModule,
     CommonModule,
     
+    PipesModule,
+
     TableModule,
     CalendarModule,
 		SliderModule,

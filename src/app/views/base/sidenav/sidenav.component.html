@@ -47,7 +47,7 @@
                                         <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/benda-sejarah')" [routerLink]="['/benda-sejarah' ]">Benda bersejarah</a>
                                     </li>
                                     <li [class.uk-active] = "setCurrentMenu('/kendaraan-sejarah')">
-                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/kendaraan-sejarah')" [routerLink]="['/kendaraan-sejarah' ]">Kendaraan bersejarah</a>
+                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/kendaraan-sejarah')" [routerLink]="['/kendaraan-sejarah', 'daya-sasasa' ]">Kendaraan bersejarah</a>
                                     </li>
                                 </ul>
                             </li>
@@ -150,9 +150,11 @@
   </div>
 </div>
 
-<div class="main uk-background-cover uk-animation-toggle" style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)" id="top-page">
+<div class="main uk-background-center-center uk-animation-toggle" style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)" id="top-page">
   
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+    <div>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </div>
 
 </div>
