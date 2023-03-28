@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.93);
     transform: translateX(-100%);
     transition: ease-in-out 300ms transform;
     width: 100%;
@@ -110,3 +110,24 @@
     margin-right: 20px;
     z-index: 99999
   }
+
+
+  ul li h4 {
+    margin-bottom : -10px !important;
+}
+
+ul li a {
+    font-size : 15px;
+}
+
+.icon {
+  padding-left: 55px !important;
+  background: url("/assets/img/icon/search-padding.png") no-repeat left !important;
+  background-position-x: right;
+  background-size: 60px !important;
+  border:1px solid white
+}
+
+.img-footer{
+    max-width:110px;
+}
