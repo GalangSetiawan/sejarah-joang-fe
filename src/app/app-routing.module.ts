@@ -24,6 +24,7 @@ import { MenuComponent } from './views-admin/base/menu/menu.component';
 import { InformasiComponent } from './views/informasi/informasi.component';
 import { EdukasiComponent } from './views/edukasi/edukasi.component';
 import { DenahComponent } from './views/denah/denah.component';
+import { RuangPamerComponent } from './views/ruang-pamer/ruang-pamer.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: "tentang", component: TentangKamiComponent },
   { path: "informasi", component: InformasiComponent },
   { path: "denah", component: DenahComponent },
+  { path: "ruang-pamer", component: RuangPamerComponent },
 
   {
     path: 'admin',

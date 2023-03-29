@@ -51,15 +51,15 @@
 
 
 
-<div class="uk-child-width-1-2@s uk-grid-collapse uk-grid-match font-size-general" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" uk-grid id="down-content">
+<div class="uk-child-width-1-2@s uk-grid-collapse uk-grid-match font-size-general" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" uk-grid id="down-content"  uk-height-viewport>
     <div>
         <div class="uk-card">
 			
 			<div class="uk-child-width-1-1 uk-grid-match uk-grid-collapse" uk-grid>
 
 				<!-- Edukasi -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/edukasi.jpg); height:150px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-edukasi gs-background-transparent-gradient" uk-toggle="target: .toggle-edukasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+				<div  class="uk-background-cover" style="background-image: url(assets/img/background/edukasi.jpg); height:25vh; overflow: hidden;">
+					<div class="uk-card uk-card-body toggle-edukasi gs-background-transparent-gradient" >
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -75,22 +75,30 @@
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/edukasi.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
 							</div>
+							<div class="col-md-12">
+								<article class="uk-article font-size-general uk-light">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+										<span> <a [routerLink]="['/edukasi']"><b>Selengkapnya</b></a></span>
+									</p>
+								</article>
+							</div>
 						</div>
 					</div>
-					<div class="uk-card uk-card-body toggle-edukasi gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-edukasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
+					<!-- <div class="uk-card uk-card-body toggle-edukasi gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-edukasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
 						<article class="uk-article font-size-general uk-light">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 								<span> <a [routerLink]="['/edukasi']"><b>Selengkapnya</b></a></span>
 							</p>
 						</article>
-					</div>
+					</div> -->
 
 				</div>
 
 				<!-- Koleksi -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/koleksi.jpg); height:150px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-koleksi gs-background-transparent-gradient" uk-toggle="target: .toggle-koleksi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+				<div  class="uk-background-cover" style="background-image: url(assets/img/background/koleksi.jpg); height:25vh; overflow: hidden;">
+					<div class="uk-card uk-card-body toggle-koleksi gs-background-transparent-gradient">
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -106,21 +114,31 @@
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/koleksi.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
 							</div>
+
+							<div class="col-md-12">
+								<article class="uk-article font-size-general uk-light">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+										<span> <a [routerLink]="['/koleksi']"><b>Selengkapnya</b></a></span>
+									</p>
+								</article>
+							</div>
 						</div>
 					</div>
-					<div class="uk-card uk-card-body toggle-koleksi gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-koleksi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
+					<!-- <div class="uk-card uk-card-body toggle-koleksi gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-koleksi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
 						<article class="uk-article font-size-general uk-light">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 								<span> <a [routerLink]="['/koleksi']"><b>Selengkapnya</b></a></span>
 							</p>
 						</article>
-					</div>
+					</div> -->
 				</div>
 
 				<!-- Tentang kami -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/tentang.jpg); height:150px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-tentang gs-background-transparent-gradient" uk-toggle="target: .toggle-tentang;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" > <div class="row uk-padding-small">
+				<div  class="uk-background-cover" style="background-image: url(assets/img/background/tentang.jpg); height:25vh; overflow: hidden;">
+					<div class="uk-card uk-card-body toggle-tentang gs-background-transparent-gradient" > 
+						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
 									<a class="uk-link-reset" style="color : #E0DED2 !important" [routerLink]="['/tentang']">
@@ -135,20 +153,30 @@
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/tentang.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
 							</div>
+
+							<div class="col-md-12">
+								<article class="uk-article font-size-general uk-light">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+										<span> <a [routerLink]="['/tentang']"><b>Selengkapnya</b></a></span>
+									</p>
+								</article>
+							</div>
 						</div>
 					</div>
-					<div class="uk-card uk-card-body toggle-tentang gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-tentang;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden> <article class="uk-article font-size-general uk-light">
+					<!-- <div class="uk-card uk-card-body toggle-tentang gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-tentang;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden> 
+						<article class="uk-article font-size-general uk-light">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 								<span> <a [routerLink]="['/tentang']"><b>Selengkapnya</b></a></span>
 							</p>
 						</article>
-					</div>
+					</div> -->
 				</div>
 
 				<!-- Informasi -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/informasi.jpg); height:150px; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-informasi gs-background-transparent-gradient" uk-toggle="target: .toggle-informasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+				<div  class="uk-background-cover" style="background-image: url(assets/img/background/informasi.jpg); height:25vh; overflow: hidden;">
+					<div class="uk-card uk-card-body toggle-informasi gs-background-transparent-gradient" >
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -164,16 +192,25 @@
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/informasi.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
 							</div>
+
+							<div class="col-md-12">
+								<article class="uk-article font-size-general uk-light">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+										<span> <a [routerLink]="['/informasi']"><b>Selengkapnya</b></a></span>
+									</p>
+								</article>
+							</div>
 						</div>
 					</div>
-					<div class="uk-card uk-card-body toggle-informasi gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-informasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
+					<!-- <div class="uk-card uk-card-body toggle-informasi gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-informasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
 						<article class="uk-article font-size-general uk-light">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 								<span> <a [routerLink]="['/informasi']"><b>Selengkapnya</b></a></span>
 							</p>
 						</article>
-					</div>
+					</div> -->
 				</div>
 				
 				
@@ -186,8 +223,8 @@
 			<div class="uk-child-width-1-1 uk-grid-match uk-grid-collapse" uk-grid>
 				
 				<!-- Denah gedung -->
-				<div  class="uk-background-cover gs-dashbord-menu" style="background-image: url(assets/img/background/denah.jpg); overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-denah gs-background-transparent-gradient" uk-toggle="target: .toggle-denah;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+				<div  class="uk-background-cover gs-dashbord-menu" style="background-image: url(assets/img/background/denah.jpg); overflow: hidden; height: 50vh;">
+					<div class="uk-card uk-card-body toggle-denah gs-background-transparent-gradient"  >
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -196,29 +233,36 @@
 									</a>
 								</h1>
 								<div class="hr"></div>
-
 							</div>
 							<div class="col-md-4 col-xs-6 uk-text-right ">
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/denah.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
 							</div>
+							<div class="col-md-12">
+								<article class="uk-article font-size-general uk-light">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+										<span> <a [routerLink]="['/denah']"><b>Selengkapnya</b></a></span>
+									</p>
+								</article>
+							</div>
 						</div>
 					</div>
-					<div class="uk-card uk-card-body toggle-denah gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-denah;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
+					<!-- <div class="uk-card uk-card-body toggle-denah gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-denah;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
 						<article class="uk-article font-size-general uk-light">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 								<span> <a [routerLink]="['/denah']"><b>Selengkapnya</b></a></span>
 							</p>
 						</article>
-					</div>
+					</div> -->
 				</div>
 
 
 				<!-- Berita -->
-				<div  class="uk-background-cove gs-dashbord-menu" style="background-image: url(assets/img/background/berita.jpg); overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-berita gs-background-transparent-gradient" uk-toggle="target: .toggle-berita;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" >
+				<div  class="uk-background-cover gs-dashbord-menu" style="background-image: url(assets/img/background/berita.jpg); overflow: hidden; height: 50vh;">
+					<div class="uk-card uk-card-body toggle-berita gs-background-transparent-gradient" >
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -234,16 +278,24 @@
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/berita.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
 							</div>
+							<div class="col-md-12">
+								<article class="uk-article font-size-general uk-light">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+										<span> <a [routerLink]="['/post']"><b>Selengkapnya</b></a></span>
+									</p>
+								</article>
+							</div>
 						</div>
 					</div>
-					<div class="uk-card uk-card-body toggle-berita gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-berita;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
+					<!-- <div class="uk-card uk-card-body toggle-berita gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-berita;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
 						<article class="uk-article font-size-general uk-light">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 								<span> <a [routerLink]="['/post']"><b>Selengkapnya</b></a></span>
 							</p>
 						</article>
-					</div>
+					</div> -->
 				</div>
 	
 			</div>
