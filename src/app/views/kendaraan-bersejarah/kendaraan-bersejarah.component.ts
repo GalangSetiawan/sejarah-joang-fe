@@ -14,11 +14,11 @@ export class KendaraanBersejarahComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-
     ) {
     }
 
   ngOnInit() {
+
 
     this.slug = this.activatedRoute.snapshot.paramMap.get('slug')
     console.log('slug kendaraan bersejarah ===>',this.slug)

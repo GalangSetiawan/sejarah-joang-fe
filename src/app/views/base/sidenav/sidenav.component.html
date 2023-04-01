@@ -39,62 +39,67 @@
                 <div class="mt-4">
                     <ul class="uk-nav uk-nav-default">
                         <li class="mb-2">
-                            <a [class.uk-active] = "setCurrentMenu('/dashboard')">
+                            <a [class.gs-selected-menu] = "setCurrentMenu('/dashboard')">
                                 <h4 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/dashboard')" [routerLink]="['/dashboard' ]">Beranda</h4>
                             </a>
                         </li>
                         <li class="uk-parent">
-                            <a [class.uk-active] = "setCurrentMenu('/edukasi')">
+                            <a [class.gs-selected-menu] = "setCurrentMenu('/edukasi')">
                                 <h4 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/edukasi')" [routerLink]="['/edukasi' ]">Edukasi</h4>
                             </a>
                             <ul class="uk-nav-sub mt-2">
                                 <li>
-                                    <a [class.uk-active] = "setCurrentMenu('/tokoh-sejarah')">
+                                    <a [class.gs-selected-menu] = "setCurrentMenu('/tokoh-sejarah')" class="uk-light">
                                         <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tokoh-sejarah')" [routerLink]="['/tokoh-sejarah' ]">Tokoh sejarah</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a [class.uk-active] = "setCurrentMenu('/sejarah')">
+                                    <a [class.gs-selected-menu] = "setCurrentMenu('/sejarah')" class="uk-light">
                                         <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Garis sejarah</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="uk-parent">
-                            <a [class.uk-active] = "setCurrentMenu('/koleksi')">
+                            <a [class.gs-selected-menu] = "setCurrentMenu('/koleksi')">
                                 <h4 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/koleksi')" [routerLink]="['/koleksi' ]">Koleksi</h4>
                             </a>
                             <ul class="uk-nav-sub mt-2">
                                 <li>
-                                    <a [class.uk-active] = "setCurrentMenu('/ruang-pamer')">
+                                    <a [class.gs-selected-menu] = "setCurrentMenu('/ruang-pamer')" class="uk-light">
                                         <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/ruang-pamer')" [routerLink]="['/ruang-pamer' ]">Benda bersejarah</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a [class.uk-active] = "setCurrentMenu('/koleksi')">
+                                    <a [class.gs-selected-menu] = "setCurrentMenu('/koleksi')" class="uk-light">
                                         <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/koleksi')" [routerLink]="['/koleksi' ]">Kendaraan bersejarah</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="mb-2">
-                            <a [class.uk-active] = "setCurrentMenu('/tentang')">
+                            <a [class.gs-selected-menu] = "setCurrentMenu('/tentang')">
                                 <h4 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tentang')" [routerLink]="['/tentang' ]">Tentang kami</h4>
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a [class.uk-active] = "setCurrentMenu('/informasi')">
+                            <a [class.gs-selected-menu] = "setCurrentMenu('/informasi')">
                                 <h4 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/informasi')" [routerLink]="['/informasi' ]">Informasi kunjungan</h4>
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a [class.uk-active] = "setCurrentMenu('/denah')">
+                            <a [class.gs-selected-menu] = "setCurrentMenu('/denah')">
                                 <h4 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/denah')" [routerLink]="['/denah' ]">Denah gedung</h4>
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a [class.uk-active] = "setCurrentMenu('/post')">
+                            <a [class.gs-selected-menu] = "setCurrentMenu('/post')">
                                 <h4 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/post')" [routerLink]="['/post' ]">Berita</h4>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a [class.gs-selected-menu] = "setCurrentMenu('/snk')">
+                                <h4 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/snk')" [routerLink]="['/snk' ]">Syarat & ketentuan</h4>
                             </a>
                         </li>
       
@@ -111,8 +116,9 @@
                             <input class="uk-input icon uk-form-large " type="text">
                     </div>
                 </div>
-                
+                <br>
                 <div>
+                    Lokasi kami
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36048.215433693265!2d106.81689752250372!3d-6.1876506583973425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f439e42506f1%3A0x5b47d4d83d25b9dd!2sGedung%20Joang%20&#39;45!5e0!3m2!1sid!2sid!4v1679995626596!5m2!1sid!2sid" 
                         
                         style="border:0; width :100%; height: 200px; filter: grayscale(100%) invert(92%) contrast(83%);" 
@@ -160,7 +166,7 @@
                 <div class="uk-padding-large">
                     <div (click)="sidebarShow = !sidebarShow" class="align-middle">
                         <span class="link-light"
-                              uk-icon="icon: close; ratio: 2">
+                              uk-icon="icon: close; ratio: 4">
                         </span>
                     </div>
                 </div>
@@ -173,60 +179,60 @@
                 <div class="uk-width-1-3@s">
                     <div class="uk-card  uk-card-body">
                          <ul class="uk-nav-primary uk-light" uk-nav>
-                            <li class="uk-parent" [class.uk-active] = "setCurrentMenu('/koleksi')">
+                            <li class="uk-parent" [class.gs-selected-menu] = "setCurrentMenu('/koleksi')">
                                 <a>
                                     <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/koleksi')" [routerLink]="['/koleksi' ]">Koleksi</span> 
                                     <span uk-nav-parent-icon></span>
                                 </a>
                                 <ul class="uk-nav-sub">
-                                    <li [class.uk-active] = "setCurrentMenu('/benda-sejarah')">
+                                    <li [class.gs-selected-menu] = "setCurrentMenu('/benda-sejarah')">
                                         <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/benda-sejarah')" [routerLink]="['/benda-sejarah' ]">Benda bersejarah</a>
                                     </li>
-                                    <li [class.uk-active] = "setCurrentMenu('/kendaraan-sejarah')">
+                                    <li [class.gs-selected-menu] = "setCurrentMenu('/kendaraan-sejarah')">
                                         <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/kendaraan-sejarah')" [routerLink]="['/kendaraan-sejarah', 'daya-sasasa' ]">Kendaraan bersejarah</a>
                                     </li>
                                 </ul>
                             </li>
                             
         
-                            <li class="uk-parent" [class.uk-active] = "setCurrentMenu('/sejarah')">
+                            <li class="uk-parent" [class.gs-selected-menu] = "setCurrentMenu('/sejarah')">
                                 <a>
                                     <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Sejarah</span> 
                                     <span uk-nav-parent-icon></span>
                                 </a>
                                 <ul class="uk-nav-sub">
-                                    <li [class.uk-active] = "setCurrentMenu('/sejarah')">
+                                    <li [class.gs-selected-menu] = "setCurrentMenu('/sejarah')">
                                         <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Garis sejarah</a>
                                     </li>
-                                    <li [class.uk-active] = "setCurrentMenu('/tokoh-sejarah')">
+                                    <li [class.gs-selected-menu] = "setCurrentMenu('/tokoh-sejarah')">
                                         <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tokoh-sejarah')" [routerLink]="['/tokoh-sejarah' ]">Tokoh sejarah</a>
                                     </li>
                                 </ul>
                             </li>
         
         
-                            <li [class.uk-active] = "setCurrentMenu('/dashboard')">
+                            <li [class.gs-selected-menu] = "setCurrentMenu('/dashboard')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/dashboard')" [routerLink]="['/dashboard' ]">Dashboard</a>
                             </li>
-                            <li [class.uk-active] = "setCurrentMenu('/article')">
+                            <li [class.gs-selected-menu] = "setCurrentMenu('/article')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/article')" [routerLink]="['/article', 'daya-sasasa' ]">Article</a>
                             </li>
-                            <li [class.uk-active] = "setCurrentMenu('/post')">
+                            <li [class.gs-selected-menu] = "setCurrentMenu('/post')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/post')" [routerLink]="['/post']">Berita</a>
                             </li>
-                            <li [class.uk-active] = "setCurrentMenu('/snk')">
+                            <li [class.gs-selected-menu] = "setCurrentMenu('/snk')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/snk')" [routerLink]="['/snk']">Syarat & ketentuan</a>
                             </li>
-                            <li [class.uk-active] = "setCurrentMenu('/faq')">
+                            <li [class.gs-selected-menu] = "setCurrentMenu('/faq')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/faq')" [routerLink]="['/faq']">FAQ</a>
                             </li>
-                            <li [class.uk-active] = "setCurrentMenu('/tentang')">
+                            <li [class.gs-selected-menu] = "setCurrentMenu('/tentang')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tentang')" [routerLink]="['/tentang']">Tentang kami</a>
                             </li>
-                            <li [class.uk-active] = "setCurrentMenu('/informasi')">
+                            <li [class.gs-selected-menu] = "setCurrentMenu('/informasi')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/informasi')" [routerLink]="['/informasi']">Informasi</a>
                             </li>
-                            <li [class.uk-active] = "setCurrentMenu('/login')">
+                            <li [class.gs-selected-menu] = "setCurrentMenu('/login')">
                                 <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/login')" [routerLink]="['/login']">Login</a>
                             </li>
                         </ul>
@@ -275,6 +281,7 @@
 
       <a class="p-3" href="#top-page"  uk-scroll>
           <!-- <img src="assets/img/belgium-wwii.png" alt="" > -->
+          
       </a>
 
       <div class="sidebar-open" >
@@ -283,7 +290,15 @@
               uk-icon="icon: menu; ratio: 2">
           </span>
       </div>
+
+      <a class="p-3 uk-light" href="#top-page"  uk-scroll style="position: absolute; bottom: 0; right: 30%;">
+        <!-- <img src="assets/img/belgium-wwii.png" alt="" > -->
+        <span uk-icon="icon: arrow-up; ratio: 2"></span>
+      </a>
+
+      
   </div>
+  
 </div>
 
 <div class="main uk-background-center-center uk-animation-toggle" style="background-image: url(https://www.belgiumwwii.be/content/img/bg.jpg)" id="top-page">

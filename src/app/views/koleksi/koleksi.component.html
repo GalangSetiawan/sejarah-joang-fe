@@ -4,6 +4,17 @@
 		<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match gs-background-transparent-black pt-5" style="height: 50vh;" uk-grid>
 			<div>
 				<div class="uk-card uk-card-body">
+
+					<nav aria-label="Breadcrumb">
+						<ul class="uk-breadcrumb">
+							<li><a href="#">Home</a></li>
+							<span>Koleksi</span>
+							<!-- <li><a href="#">Linked Category</a></li> -->
+							<!-- <li class="uk-disabled"><a>Disabled Category</a></li> -->
+							<!-- <li><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></li> -->
+						</ul>
+					</nav>
+
 					<h3 class="uk-card-title">
 						<div class="uk-light"  [routerLink]="['../']" style="cursor:pointer;">
 							<span><img src="assets/img/icon/arrow.png" class="" alt="" style="width: 50px;" ></span>
@@ -46,51 +57,35 @@
 	
 	
 		<!-- Ruang pamer -->
-		<div class="uk-child-width-1-4@m uk-padding uk-padding-remove-top uk-grid-match uk-grid">
-			<div>
-				<div class="uk-card uk-card-default" [routerLink]="['/ruang-pamer']">
-					<div class="uk-card-media-top">
-						<img src="assets/img/background/joang.jpg" width="1800" height="1200" alt="">
-					</div>
-					<div class="uk-card-body">
-						<h3 class="uk-card-title">Ruang masa Belanda</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="uk-card uk-card-default" [routerLink]="['/ruang-pamer']">
-					<div class="uk-card-body">
-						<h3 class="uk-card-title">Ruang masa Jepang</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
-					<div class="uk-card-media-bottom">
-						<img src="assets/img/background/tamrin.jpg" width="1800" height="1200" alt="">
+		<div class="uk-child-width-1-4@m uk-child-width-1-2@m uk-child-width-1-6@l uk-padding uk-padding-remove-top uk-grid-match uk-grid">
+			
+			<ng-container *ngFor="let ruang of listRuangPamer; let i = index">
+				<div class="mb-5" *ngIf="i%2 == 1; else anotherCard">
+					<div class="uk-card uk-card-default" [routerLink]="['/ruang-pamer']">
+						<div class="uk-card-media-top">
+							<img [src]="ruang.img" style="text-align: center;" alt="">
+						</div>
+						<div class="uk-card-body" >
+							<h3 class="uk-card-title">{{ ruang.name }} {{i}}</h3>
+							<div [innerHTML]=" ruang.desc | keepHtml"></div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div>
-				<div class="uk-card uk-card-default" [routerLink]="['/ruang-pamer']">
-					<div class="uk-card-media-top">
-						<img src="assets/img/background/prasasti.jpg" width="1800" height="1200" alt="">
+
+				<ng-template #anotherCard>
+					<div class="mb-5">
+						<div class="uk-card uk-card-default" [routerLink]="['/ruang-pamer']">
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">{{ ruang.name }}</h3>
+								<div [innerHTML]=" ruang.desc | keepHtml"></div>
+							</div>
+							<div class="uk-card-media-bottom">
+								<img [src]="ruang.img" style="text-align: center;" alt="">
+							</div>
+						</div>
 					</div>
-					<div class="uk-card-body">
-						<h3 class="uk-card-title">Ruang masa proklamasi</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="uk-card uk-card-default" [routerLink]="['/ruang-pamer']">
-					<div class="uk-card-body">
-						<h3 class="uk-card-title">Ruang masa kedaulatan RIS</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
-					<div class="uk-card-media-bottom">
-						<img src="assets/img/background/fatahilah.jpg" width="1800" height="1200" alt="">
-					</div>
-				</div>
-			</div>
+				</ng-template>
+			</ng-container>
 		</div>
 	
 		<!-- Kendaraan bersejarah header -->

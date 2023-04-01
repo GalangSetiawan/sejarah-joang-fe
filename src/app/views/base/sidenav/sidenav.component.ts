@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router'
+import { Router, Event, NavigationStart, NavigationEnd, NavigationError} from '@angular/router';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-sidenav',
@@ -11,8 +13,29 @@ export class SidenavComponent implements OnInit {
   public isLoginScreen:boolean = false;
 
   constructor(
-    private route: Router,
-  ) {}
+    private router: Router,
+    
+  ) {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationStart) {
+          // Show progress spinner or progress bar
+          console.log('Route change detected');
+          this.backToTop();
+      }
+
+      if (event instanceof NavigationEnd) {
+          // Hide progress spinner or progress bar
+          console.log(event);
+      }
+
+      if (event instanceof NavigationError) {
+           // Hide progress spinner or progress bar
+
+          // Present error to user
+          console.log(event.error);
+      }
+  });
+  }
 
   ngOnInit() {
   
@@ -20,9 +43,17 @@ export class SidenavComponent implements OnInit {
 
 
   public setCurrentMenu(url:string){
-    console.log('setCurrentMenu ===>', this.route.url);
-    if(this.route.url.includes(url)) return true;
+    // $('html, body').animate({ scrollTop: 0 }, 'fast');
+    console.log('setCurrentMenu ===>', this.router.url);
+    if(this.router.url.includes(url)) return true;
     else return false;
+  }
+
+  public backToTop(){
+    $('#top-page').hide();
+    $('#top-page').show('slow');
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    console.log('backToTop ===>');
   }
 }
 

@@ -2,6 +2,18 @@
     <div>
         <div class="uk-padding uk-padding-remove-bottom uk-card-body">
             <h3 class="uk-card-title">
+
+                <nav aria-label="Breadcrumb" class="nf">
+                    <ul class="uk-breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a [routerLink]="['/edukasi']">Edukasi</a></li>
+                        <li><span>Tokoh sejarah</span></li>
+                        <!-- <li><a href="#">Linked Category</a></li> -->
+                        <!-- <li class="uk-disabled"><a>Disabled Category</a></li> -->
+                        <!-- <li><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></li> -->
+                    </ul>
+                </nav>
+                
                 <div *ngIf="selectedItem == null" class="uk-dark"  [routerLink]="['/edukasi']" style="cursor:pointer;">
                     <span><img src="assets/img/icon/arrow.png" class="" alt="" style="width: 50px; filter: invert(1);" ></span>
                     Kembali

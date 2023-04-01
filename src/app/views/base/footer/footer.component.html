@@ -4,22 +4,23 @@
             <div>
                 <div class="uk-padding uk-padding-remove-right  uk-light">
                 
-                    <div class="uk-child-width-expand" uk-grid>
+                    <div class="uk-child-width-expand" uk-grid style="cursor: pointer;">
         
                         <div>
                             <ul class="uk-list">
-                                <li>Edukasi</li>
-                                <li>Koleksi</li>
-                                <li>Tentang kami</li>
-                                <li>Informasi</li>
+                                <li [routerLink]="['/edukasi' ]"><span>Edukasi</span></li>
+                                <li [routerLink]="['/koleksi' ]"><span>Koleksi</span></li>
+                                <li [routerLink]="['/tentang' ]"><span>Tentang kami</span></li>
+                                <li [routerLink]="['/informasi' ]"><span>Informasi</span></li>
                             </ul>
                         </div>
         
                         <div>
                             <ul class="uk-list">
-                                <li>Sejarah</li>
-                                <li>Denah lokasi</li>
-                                <li>Berita</li>
+                                <li [routerLink]="['/sejarah' ]"><span>Sejarah</span></li>
+                                <li [routerLink]="['/denah' ]"><span>Denah lokasi</span></li>
+                                <li [routerLink]="['/post' ]"><span>Berita</span></li>
+                                <li [routerLink]="['/snk' ]"><span>Syarat & ketentuan</span></li>
                             </ul>
                         </div>
                     </div>
@@ -111,9 +112,10 @@
                 <div class="uk-padding-left uk-text-center uk-light">
                     <h6 class="uk-padding-small uk-padding-remove-bottom ">Contact us :</h6>
                     <div class="uk-child-width-expand@s uk-padding-small  uk-text-left uk-padding-remove-top" uk-grid>
-                        <ul class="uk-list uk-list-hyphen uk-padding-small">
-                            <li>Andreass (Bag. Reservasi)</li>
-                            <li>Jhon Wick</li>
+                        <ul class="uk-list uk-list-hyphen uk-padding-small" style="cursor: pointer;">
+                            <li [routerLink]="['/informasi' ]">Official office</li>
+                            <li [routerLink]="['/informasi' ]">Tour guide</li>
+                            <li [routerLink]="['/informasi' ]">Loket</li>
                         </ul>
                     </div>
         

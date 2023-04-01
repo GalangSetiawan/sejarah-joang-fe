@@ -2,6 +2,18 @@
     <div class="uk-child-width-1-1@m uk-grid-small uk-grid-match gs-background-transparent-black pt-5" uk-grid>
         <div>
             <div class="uk-card uk-card-body">
+                
+                <nav aria-label="Breadcrumb" class="nf">
+                    <ul class="uk-breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a [routerLink]="['/koleksi']">Koleksi</a></li>
+                        <li><span>Kendaraan bersejarah</span></li>
+                        <!-- <li><a href="#">Linked Category</a></li> -->
+                        <!-- <li class="uk-disabled"><a>Disabled Category</a></li> -->
+                        <!-- <li><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></li> -->
+                    </ul>
+                </nav>
+
                 <h3 class="uk-card-title">
                     <div class="uk-light"  [routerLink]="['/koleksi']" style="cursor:pointer;">
                         <span><img src="assets/img/icon/arrow.png" class="" alt="" style="width: 50px;" ></span>
