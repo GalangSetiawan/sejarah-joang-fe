@@ -1,0 +1,63 @@
+<div class="font-size-general" *ngIf="data != null">
+		
+	<div class="uk-background-cover uk-light font-size-general"  data-src="assets/img/background/edukasi.jpg" uk-img>
+		<div class="uk-child-width-1-1@m uk-grid-small uk-grid-match gs-background-transparent-black pt-5" style="height: 50vh;" uk-grid>
+			<div>
+				<div class="uk-card uk-card-body">
+
+					<nav aria-label="Breadcrumb" class="nf">
+						<ul class="uk-breadcrumb">
+							<li><a href="#">Home</a></li>
+							<li><a [routerLink]="['/edukasi']">Edukasi</a></li>
+							<li><a [routerLink]="['/sejarah']">Sejarah</a></li>
+							<li><span>{{ data.subtitle }}</span></li>
+							<!-- <li><a href="#">Linked Category</a></li> -->
+							<!-- <li class="uk-disabled"><a>Disabled Category</a></li> -->
+							<!-- <li><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></li> -->
+						</ul>
+					</nav>
+
+
+					<h3 class="uk-card-title">
+                        <div class="uk-light" [routerLink]="['/sejarah']" style="cursor:pointer;">
+							<span><img src="assets/img/icon/arrow.png" class="" alt="" style="width: 50px;" ></span>
+							Kembali
+						</div>
+					</h3>
+	
+                    <h1>Tahun {{ data.year }}</h1>
+
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div [innerHTML]=" data.prolog | keepHtml"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+			</div>
+
+		</div>
+	</div>
+
+
+    <section >
+        <div class="uk-card uk-grid-match uk-grid-collapse uk-child-width-1-2@s" style="height: 50vh;" uk-grid>
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                <img [src]="data.img" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body uk-padding-large">
+                    <h2 class="uk-card-title">{{data.title}}t</h2>
+                    <div [innerHTML]=" data.body | keepHtml"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</div>
+

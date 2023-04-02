@@ -121,6 +121,7 @@ import { InformasiComponent } from './views/informasi/informasi.component';
 import { EdukasiComponent } from './views/edukasi/edukasi.component';
 import { DenahComponent } from './views/denah/denah.component';
 import { RuangPamerComponent } from './views/ruang-pamer/ruang-pamer.component';
+import { SejarahDetailComponent } from './views/sejarah-detail/sejarah-detail.component';
 
 
 @NgModule({
@@ -145,6 +146,7 @@ import { RuangPamerComponent } from './views/ruang-pamer/ruang-pamer.component';
     EdukasiComponent,
     DenahComponent,
     RuangPamerComponent,
+    SejarahDetailComponent,
   ],
   imports: [
     BrowserAnimationsModule,

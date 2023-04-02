@@ -43,8 +43,6 @@ export class SidenavComponent implements OnInit {
 
 
   public setCurrentMenu(url:string){
-    // $('html, body').animate({ scrollTop: 0 }, 'fast');
-    console.log('setCurrentMenu ===>', this.router.url);
     if(this.router.url.includes(url)) return true;
     else return false;
   }
@@ -53,7 +51,6 @@ export class SidenavComponent implements OnInit {
     $('#top-page').hide();
     $('#top-page').show('slow');
     $('html, body').animate({ scrollTop: 0 }, 'slow');
-    console.log('backToTop ===>');
   }
 }
 

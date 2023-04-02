@@ -25,6 +25,7 @@ import { InformasiComponent } from './views/informasi/informasi.component';
 import { EdukasiComponent } from './views/edukasi/edukasi.component';
 import { DenahComponent } from './views/denah/denah.component';
 import { RuangPamerComponent } from './views/ruang-pamer/ruang-pamer.component';
+import { SejarahDetailComponent } from './views/sejarah-detail/sejarah-detail.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: "post", component: PostsComponent },
   { path: "article/:slug", component: ArticleComponent },
   { path: "sejarah", component: SejarahComponent },
+  { path: "sejarah-detail/:slug", component: SejarahDetailComponent },
   { path: "koleksi", component: KoleksiComponent },
   { path: "benda-sejarah", component: BendaBersejarahComponent },
   { path: "tokoh-sejarah", component: TokohSejarahComponent },

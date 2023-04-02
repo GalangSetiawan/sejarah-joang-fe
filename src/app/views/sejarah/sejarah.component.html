@@ -1,161 +1,67 @@
+<div class="uk-child-width-1-2 uk-grid-small uk-grid-match pt-5 font-size-general" uk-grid  uk-height-viewport="offset-top: true" >
+  <div>
+      <div class="uk-padding uk-padding-remove-bottom uk-card-body">
+          <h3 class="uk-card-title">
 
-<div class="uk-child-width-1-1@s uk-child-width-1-2@m p-4" uk-grid>
-    <div>
-        <div class="">
+              <nav aria-label="Breadcrumb" class="nf">
+                  <ul class="uk-breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a [routerLink]="['/edukasi']">Edukasi</a></li>
+                      <li><span>Sejarah</span></li>
+                      <!-- <li><a href="#">Linked Category</a></li> -->
+                      <!-- <li class="uk-disabled"><a>Disabled Category</a></li> -->
+                      <!-- <li><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></li> -->
+                  </ul>
+              </nav>
             
 
+              <div class="uk-dark" [routerLink]="['../edukasi']" style="cursor:pointer;">
+                  <span><img src="assets/img/icon/arrow.png" class="" alt="" style="width: 50px; filter: invert(1);" ></span>
+                  Kembali
+              </div>
+          </h3>
+          <h3 class="uk-card-title mb-5">
+						<button class="uk-button uk-button-primary uk-button-large uk-light" style="cursor: text;">
+							<b>Sejarah</b>
+						</button>
+					</h3>
 
-            <div class='wrapper'>
-                <div class='steps' id='steps'>
-                  <div class='step'>
-                    <div class='number completed'>
-                      <svg viewBox="0 0 512 512" width="100" title="check">
-                        <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
-                      </svg>
-                    </div>
-                    <div class='info'>
-                      <p class='title'>
-                        <button class="uk-button uk-button-secondary">1841</button>
-                      </p>
-                      <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-                
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                      <p class='title'>
-                        <button class="uk-button uk-button-secondary">1920</button>
-                      </p>                      
-                      <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">1934</button>
-                        </p> 
-                      <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">1954</button>
-                        </p> 
-                      <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">2031</button>
-                        </p>                       
-                        <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">2031</button>
-                        </p>                       
-                        <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">2031</button>
-                        </p>                       
-                        <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">2031</button>
-                        </p>                       
-                        <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">2031</button>
-                        </p>                       
-                        <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">2031</button>
-                        </p>                       
-                        <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">2031</button>
-                        </p>                       
-                        <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                  <div class='step'>
-                    <div class='number'>2</div>
-                    <div class='info'>
-                        <p class='title'>
-                            <button class="uk-button uk-button-secondary">2031</button>
-                        </p>                       
-                        <!-- <p class='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate.</p> -->
-                    </div>
-                  </div>
-
-                </div>
-            </div>
-           
-            
-
-
-        </div>
-    </div>
-    <div>
-        <div class="font-size-general">
-
-          <div class=" wrapper">
-            <dl class="uk-description-list uk-description-list-divider ">
-                <dt>Description term</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
-                <dt>Description term</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-                <dt>Description term</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-            </dl>
+          <div class="row" >
+              <div class="col-md-12">
+                  <p>Pemuda Menteng 31 adalah sebutan untuk mereka para pemuda yang bermarkas di Asgat nasionalisme. Kolaborasi antara gerakan konfrontasi pemuda Menteng 31 dan gerakan strategis angkatan tua itulah, yang berhasil mewujudkan proyek historis negara, yaitu dikumandangkannya proklamasi kemerdekaan Indonesia pada 17 Agustus 1945.</p>        
+              </div>
           </div>
 
-            
+          <div class="row justify-content-md-center mt-5" style="height: 300px; overflow: scroll; ">
+           
+            <div class="col-md-auto">
+                <ul class="uk-list">
+                    <li *ngFor="let year of listYear">
+                        <button class="uk-button uk-button-primary uk-button-large" (click)="onYearSelected(year)">{{ year }}</button>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          
+      </div>
+  </div>
+
+
+  <div style="height: 100vh; overflow: scroll;" class="uk-padding-large-bottom">
+    <div class="uk-padding uk-padding-remove-bottom uk-card-body">
+        
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom uk-width-1-1@m" *ngFor="let sejarah of selectedItem" >
+            <h3 class="uk-card-title"> {{ sejarah.subtitle }} </h3>
+            <div class="gs-spoiler-sejarah">
+                <div [innerHTML]=" sejarah.prolog | keepHtml"></div>
+            </div>
+            <a (click)="onSejarahSelected(sejarah)" >Selengkapnya...</a>
         </div>
+        
+
     </div>
-   
+  </div>
 </div>
+
+
 
