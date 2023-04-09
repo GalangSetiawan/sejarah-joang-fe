@@ -251,7 +251,10 @@ import { SejarahDetailComponent } from './views/sejarah-detail/sejarah-detail.co
     
 
   ],
-  providers: [authInterceptorProviders,CurrencyPipe],
+  providers: [
+    authInterceptorProviders,
+    CurrencyPipe,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

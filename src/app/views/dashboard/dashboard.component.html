@@ -19,11 +19,10 @@
 							<footer><cite><a href="#">Ir. Soekarno</a></cite></footer>
 						</blockquote>
 
-						<!-- <div class="uk-child-width-1-1@m" uk-grid>
+						<div class="uk-child-width-1-1@m" uk-grid>
 
 							<a href="#down-content" uk-scroll><img src="assets/img/belgium-wwii.png" class="" alt="" style="width: 1000px;"></a>
-		
-						</div> -->
+						</div>
 
 						<section id="section10" class="demo">
 							<a href="#down-content" uk-scroll><span></span></a>
@@ -58,8 +57,8 @@
 			<div class="uk-child-width-1-1 uk-grid-match uk-grid-collapse" uk-grid>
 
 				<!-- Edukasi -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/edukasi.jpg); height:25vh; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-edukasi gs-background-transparent-gradient" >
+				<div  class="uk-background-cover" style="background-image: url(assets/img/background/edukasi.jpg); height:25vh; overflow: hidden;"  uk-toggle="target: #toggle-edukasi; mode: hover; animation: uk-animation-slide-left">
+					<div class="uk-card uk-card-body gs-background-transparent-dashboard-child" >
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -70,7 +69,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 col-xs-6 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right" id="toggle-edukasi" hidden>
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/edukasi.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -86,7 +85,7 @@
 						</div>
 					</div>
 					<!-- <div class="uk-card uk-card-body toggle-edukasi gs-background-transparent-black" style="backdrop-filter: sepia(1); color: #E0DED2;" uk-toggle="target: .toggle-edukasi;mode:hover; queued: true; duration: 150; animation: uk-animation-shake" hidden>
-						<article class="uk-article font-size-general uk-light">
+						<article class="uk-article font-size-general uk-light">	x
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 								<span> <a [routerLink]="['/edukasi']"><b>Selengkapnya</b></a></span>
@@ -97,8 +96,8 @@
 				</div>
 
 				<!-- Koleksi -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/koleksi.jpg); height:25vh; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-koleksi gs-background-transparent-gradient">
+				<div  class="uk-background-cover" style="background-image: url(assets/img/background/koleksi.jpg); height:25vh; overflow: hidden;"  uk-toggle="target: #toggle-koleksi; mode: hover; animation: uk-animation-slide-left">
+					<div class="uk-card uk-card-body gs-background-transparent-dashboard-child">
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -109,7 +108,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 col-xs-6 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right " id="toggle-koleksi" hidden>
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/koleksi.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -136,8 +135,8 @@
 				</div>
 
 				<!-- Tentang kami -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/tentang.jpg); height:25vh; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-tentang gs-background-transparent-gradient" > 
+				<div  class="uk-background-cover" style="background-image: url(assets/img/background/tentang.jpg); height:25vh; overflow: hidden;"  uk-toggle="target: #toggle-tentang; mode: hover; animation: uk-animation-slide-left">
+					<div class="uk-card uk-card-body gs-background-transparent-dashboard-child" > 
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -148,7 +147,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 col-xs-6 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right" id="toggle-tentang" hidden>
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/tentang.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -175,8 +174,8 @@
 				</div>
 
 				<!-- Informasi -->
-				<div  class="uk-background-cover" style="background-image: url(assets/img/background/informasi.jpg); height:25vh; overflow: hidden;">
-					<div class="uk-card uk-card-body toggle-informasi gs-background-transparent-gradient" >
+				<div  class="uk-background-cover" style="background-image: url(assets/img/background/informasi.jpg); height:25vh; overflow: hidden;" uk-toggle="target: #toggle-informasi; mode: hover; animation: uk-animation-slide-left">
+					<div class="uk-card uk-card-body gs-background-transparent-dashboard-child" >
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -187,7 +186,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 col-xs-6 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right" id="toggle-informasi" hidden>
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/informasi.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -223,8 +222,8 @@
 			<div class="uk-child-width-1-1 uk-grid-match uk-grid-collapse" uk-grid>
 				
 				<!-- Denah gedung -->
-				<div  class="uk-background-cover gs-dashbord-menu" style="background-image: url(assets/img/background/denah.jpg); overflow: hidden; height: 50vh;">
-					<div class="uk-card uk-card-body toggle-denah gs-background-transparent-gradient"  >
+				<div  class="uk-background-cover gs-dashbord-menu" style="background-image: url(assets/img/background/denah.jpg); overflow: hidden; height: 50vh;" uk-toggle="target: #toggle-denah; mode: hover; animation: uk-animation-slide-left">
+					<div class="uk-card uk-card-body gs-background-transparent-dashboard-child"  >
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -234,7 +233,7 @@
 								</h1>
 								<div class="hr"></div>
 							</div>
-							<div class="col-md-4 col-xs-6 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right" id="toggle-denah" hidden>
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/denah.png" class="" alt="" style="width: 60px;" ></div>
 								</a>
@@ -261,8 +260,8 @@
 
 
 				<!-- Berita -->
-				<div  class="uk-background-cover gs-dashbord-menu" style="background-image: url(assets/img/background/berita.jpg); overflow: hidden; height: 50vh;">
-					<div class="uk-card uk-card-body toggle-berita gs-background-transparent-gradient" >
+				<div  class="uk-background-cover gs-dashbord-menu" style="background-image: url(assets/img/background/berita.jpg); overflow: hidden; height: 50vh;" uk-toggle="target: #toggle-berita; mode: hover; animation: uk-animation-slide-left">
+					<div class="uk-card uk-card-body gs-background-transparent-dashboard-child" >
 						<div class="row uk-padding-small">
 							<div class="col-md-8 col-xs-6 uk-text-left ">
 								<h1 class="uk-article-title">
@@ -273,7 +272,7 @@
 								<div class="hr"></div>
 
 							</div>
-							<div class="col-md-4 col-xs-6 uk-text-right ">
+							<div class="col-md-4 col-xs-6 uk-text-right" id="toggle-berita" hidden>
 								<a class="uk-link-reset">
 									<div class="uk-padding-small uk-padding-remove-top"><img src="assets/img/icon/berita.png" class="" alt="" style="width: 60px;" ></div>
 								</a>

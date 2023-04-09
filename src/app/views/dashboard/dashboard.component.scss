@@ -27,6 +27,8 @@ section::after {
 }
 .demo a:hover {
   opacity: .5;
+  border: 2px solid #D7742B;
+
 }
 
 
@@ -94,38 +96,7 @@ section::after {
 // ============
 
 
-.uk-background-cover{
-  // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  //  filter: grayscale(100%);
-  //  -webkit-transition: .30s ease-in-out;
-	// transition: .30s ease-in-out;
-  // transform-origin: 50% 65%;
-  transition: transform 5s, 
-  filter 3s ease-in-out;
-}
 
-.uk-background-cover:hover{
-  // -webkit-filter: sepia(100%);
-	// filter: sepia(100%);
-  // transform: scale(1.5);
-
-  .hr{
-    background-color: white;
-    height: 2px;
-    width: 100%;
-
-  }
-
-
-}
-
-.hr{
-  background-color: red;
-  height: 2px;
-  width: 20%;
-    -webkit-transition: .30s ease-in-out;
-	transition: .30s ease-in-out;
-}
 
 // ============================
 figure.effect-ming {

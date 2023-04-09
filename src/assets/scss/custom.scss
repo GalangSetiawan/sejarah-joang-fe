@@ -1,10 +1,13 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Syne:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
     font-family: 'Merriweather', serif !important;
+    // font-family: 'Fjalla One', serif !important;
+
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -17,6 +20,8 @@ a {
 
 .nf{
     font-family: 'Merriweather', serif !important;
+    // font-family: 'Fjalla One', serif !important;
+
 }
 
 .hf{
@@ -61,9 +66,21 @@ a {
 .gs-background-transparent-gradient{
     background-image: linear-gradient(rgba(67, 30, 21, 0.4), rgba(67, 30, 21, 0.7));
 }
+.gs-background-transparent-gradient:hover{
+    background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.7));
+}
 
 .background-filter-sephia{
     filter: sepia();
+}
+
+.gs-background-transparent-dashboard-child{
+    background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.7));
+}
+
+.gs-background-transparent-dashboard-child:hover{
+    background-image: url('https://www.belgiumwwii.be/content/img/cadre-hover.png');
+    background-color: rgba(0,0,0, 0.4)
 }
 
 .gs-background-transparent-gradient-90{
@@ -75,9 +92,7 @@ a {
   background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.7));
 }
 
-.gs-background-transparent-gradient:hover{
-    background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.7));
-}
+
 
 .gs-selected-menu{
     h4, span{
@@ -101,3 +116,37 @@ a {
     }
   
   }
+
+
+
+
+  .uk-background-cover{
+    transition: transform 2s, 
+    filter 2s ease-in-out;
+  }
+  
+  .uk-background-cover:hover{
+    .hr{
+    margin-bottom:0px;
+      background-color: whitesmoke;
+      height: 2px;
+      width: 100%;
+    }
+  }
+  
+  .hr{
+    background-color: #D0502D;
+    margin-bottom:15px;
+    height: 2px;
+    width: 20%;
+    -webkit-transition: .20s ease-in-out;
+      transition: .20s ease-in-out;
+  }
+
+//   #down-content{
+//     .uk-background-cover:hover{
+//         .uk-article-title{
+//             font-weight: bold;
+//         }
+//     }
+//   }

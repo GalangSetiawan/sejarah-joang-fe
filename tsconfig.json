@@ -4,8 +4,12 @@
   "compilerOptions": {
     "strictPropertyInitialization": false,
     "strictNullChecks": false,
-    "suppressImplicitAnyIndexErrors": true,
     "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "ignoreDeprecations": "5.0",
+
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     // "strict": true,
 
 

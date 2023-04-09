@@ -79,6 +79,10 @@
   }
   
 
+  .padding-top-on-small-screen{
+    padding-top:0;
+  }
+
 
 
   @media screen and (max-height: 450px) {
@@ -96,6 +100,10 @@
     }
     .main {
         margin-left: 0px; /* Same as the width of the sidenav */
+    }
+
+    .padding-top-on-small-screen{
+      padding-top: 300px;
     }
    
   }

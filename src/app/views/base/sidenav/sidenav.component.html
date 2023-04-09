@@ -29,14 +29,28 @@
 
   <div class="sidebar-content">
 
-      <div class="uk-padding-large uk-padding-remove-top container uk-position-center-left uk-overlay" >
+
+    
+
+    <div class="uk-padding-large "  >
 
 
-        <div class="uk-grid-collapse uk-grid-match uk-light uk-position-center-left uk-overlay" uk-grid>
-            <div class="uk-width-auto@m">
-              <div class="uk-padding-large">
+        <div class=" uk-light "  style="overflow:scroll; padding-bottom: 160px;" >
+            <div class="uk-width-1-1" >
+                <div class="uk-padding-large" style="width :100%; height: 100px;">
+                    <img src="assets/img/belgium-wwii.png" alt="" >
+                </div>
+            </div>
+        </div>
+
+
+        <div class="uk-grid-collapse uk-grid-match uk-light " uk-grid style="overflow:scroll">
+
+
+            <div class="uk-width-auto@m " >
+                <div class="uk-padding-large">
                         
-                <div class="mt-4">
+                <div class="">
                     <ul class="uk-nav uk-nav-default">
                         <li class="mb-2">
                             <a [class.gs-selected-menu] = "setCurrentMenu('/dashboard')">
@@ -49,13 +63,13 @@
                             </a>
                             <ul class="uk-nav-sub mt-2">
                                 <li>
-                                    <a [class.gs-selected-menu] = "setCurrentMenu('/tokoh-sejarah')" class="uk-light">
-                                        <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tokoh-sejarah')" [routerLink]="['/tokoh-sejarah' ]">Tokoh sejarah</span>
+                                    <a [class.gs-selected-menu] = "setCurrentMenu('/tokoh-sejarah')" class="uk-light hf">
+                                        <h5 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tokoh-sejarah')" [routerLink]="['/tokoh-sejarah' ]">Tokoh sejarah</h5>
                                     </a>
                                 </li>
                                 <li>
-                                    <a [class.gs-selected-menu] = "setCurrentMenu('/sejarah')" class="uk-light">
-                                        <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Garis sejarah</span>
+                                    <a [class.gs-selected-menu] = "setCurrentMenu('/sejarah')" class="uk-light hf">
+                                        <h5 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Garis sejarah</h5>
                                     </a>
                                 </li>
                             </ul>
@@ -66,13 +80,13 @@
                             </a>
                             <ul class="uk-nav-sub mt-2">
                                 <li>
-                                    <a [class.gs-selected-menu] = "setCurrentMenu('/ruang-pamer')" class="uk-light">
-                                        <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/ruang-pamer')" [routerLink]="['/ruang-pamer' ]">Benda bersejarah</span>
+                                    <a [class.gs-selected-menu] = "setCurrentMenu('/ruang-pamer')" class="uk-light hf">
+                                        <h5 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/ruang-pamer')" [routerLink]="['/ruang-pamer' ]">Benda bersejarah</h5>
                                     </a>
                                 </li>
                                 <li>
-                                    <a [class.gs-selected-menu] = "setCurrentMenu('/koleksi')" class="uk-light">
-                                        <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/koleksi')" [routerLink]="['/koleksi' ]">Kendaraan bersejarah</span>
+                                    <a [class.gs-selected-menu] = "setCurrentMenu('/koleksi')" class="uk-light hf">
+                                        <h5 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/koleksi')" [routerLink]="['/koleksi' ]">Kendaraan bersejarah</h5>
                                     </a>
                                 </li>
                             </ul>
@@ -102,15 +116,15 @@
                                 <h4 (click)="sidebarShow = !sidebarShow; setCurrentMenu('/snk')" [routerLink]="['/snk' ]">Syarat & ketentuan</h4>
                             </a>
                         </li>
-      
+        
                     </ul>
                 </div>
-              </div>
+                </div>
             </div>
-            <div class="uk-width-1-2@m pt-4">
-              <div class="uk-padding-large">
-                  
-                  
+            <div class="uk-width-1-2@m">
+                <div class="uk-padding-large">
+                    
+                    
                 <div class="uk-margin uk-dark">
                     <div class="uk-width-1-1">
                             <input class="uk-input icon uk-form-large " type="text">
@@ -120,7 +134,6 @@
                 <div>
                     Lokasi kami
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36048.215433693265!2d106.81689752250372!3d-6.1876506583973425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f439e42506f1%3A0x5b47d4d83d25b9dd!2sGedung%20Joang%20&#39;45!5e0!3m2!1sid!2sid!4v1679995626596!5m2!1sid!2sid" 
-                        
                         style="border:0; width :100%; height: 200px; filter: grayscale(100%) invert(92%) contrast(83%);" 
                         allowfullscreen="" 
                         loading="lazy" 
@@ -154,121 +167,121 @@
                         </div>
                     </div>
         
-      
+        
                     
                 </div>
         
                 <hr>
                 
-              </div>
+                </div>
             </div>
-            <div class="uk-width-expand@m pt-3" style="height: 100px;">
+            <div class="uk-width-expand@m show-on-large-screen" style="height: 100px;" >
                 <div class="uk-padding-large">
                     <div (click)="sidebarShow = !sidebarShow" class="align-middle">
                         <span class="link-light"
-                              uk-icon="icon: close; ratio: 3">
+                                uk-icon="icon: close; ratio: 3">
                         </span>
                     </div>
                 </div>
             </div>
         </div>
-      
-
-            <!-- <div class="uk-position-center-left uk-overlay zoom-out" uk-grid>
-    
-                <div class="uk-width-1-3@s">
-                    <div class="uk-card  uk-card-body">
-                         <ul class="uk-nav-primary uk-light" uk-nav>
-                            <li class="uk-parent" [class.gs-selected-menu] = "setCurrentMenu('/koleksi')">
-                                <a>
-                                    <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/koleksi')" [routerLink]="['/koleksi' ]">Koleksi</span> 
-                                    <span uk-nav-parent-icon></span>
-                                </a>
-                                <ul class="uk-nav-sub">
-                                    <li [class.gs-selected-menu] = "setCurrentMenu('/benda-sejarah')">
-                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/benda-sejarah')" [routerLink]="['/benda-sejarah' ]">Benda bersejarah</a>
-                                    </li>
-                                    <li [class.gs-selected-menu] = "setCurrentMenu('/kendaraan-sejarah')">
-                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/kendaraan-sejarah')" [routerLink]="['/kendaraan-sejarah', 'daya-sasasa' ]">Kendaraan bersejarah</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            
-        
-                            <li class="uk-parent" [class.gs-selected-menu] = "setCurrentMenu('/sejarah')">
-                                <a>
-                                    <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Sejarah</span> 
-                                    <span uk-nav-parent-icon></span>
-                                </a>
-                                <ul class="uk-nav-sub">
-                                    <li [class.gs-selected-menu] = "setCurrentMenu('/sejarah')">
-                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Garis sejarah</a>
-                                    </li>
-                                    <li [class.gs-selected-menu] = "setCurrentMenu('/tokoh-sejarah')">
-                                        <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tokoh-sejarah')" [routerLink]="['/tokoh-sejarah' ]">Tokoh sejarah</a>
-                                    </li>
-                                </ul>
-                            </li>
-        
-        
-                            <li [class.gs-selected-menu] = "setCurrentMenu('/dashboard')">
-                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/dashboard')" [routerLink]="['/dashboard' ]">Dashboard</a>
-                            </li>
-                            <li [class.gs-selected-menu] = "setCurrentMenu('/article')">
-                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/article')" [routerLink]="['/article', 'daya-sasasa' ]">Article</a>
-                            </li>
-                            <li [class.gs-selected-menu] = "setCurrentMenu('/post')">
-                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/post')" [routerLink]="['/post']">Berita</a>
-                            </li>
-                            <li [class.gs-selected-menu] = "setCurrentMenu('/snk')">
-                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/snk')" [routerLink]="['/snk']">Syarat & ketentuan</a>
-                            </li>
-                            <li [class.gs-selected-menu] = "setCurrentMenu('/faq')">
-                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/faq')" [routerLink]="['/faq']">FAQ</a>
-                            </li>
-                            <li [class.gs-selected-menu] = "setCurrentMenu('/tentang')">
-                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tentang')" [routerLink]="['/tentang']">Tentang kami</a>
-                            </li>
-                            <li [class.gs-selected-menu] = "setCurrentMenu('/informasi')">
-                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/informasi')" [routerLink]="['/informasi']">Informasi</a>
-                            </li>
-                            <li [class.gs-selected-menu] = "setCurrentMenu('/login')">
-                                <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/login')" [routerLink]="['/login']">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="uk-width-expand@s">
-                    <div class="uk-card  uk-card-body">
-                        <dl class="uk-description-list uk-description-list-divider uk-light">
-                            <dt class="uk-text-danger">Description term</dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
-                            <dt class="uk-text-danger">Description term</dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-                            <dt class="uk-text-danger">Description term</dt>
-                            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-    
-    
-                        </dl>
-                    </div>
-                </div>
-                
-                <div class="uk-width-auto@s show-on-large-screen">
-                    <div class="uk-card uk-card-body ">
-                        <div (click)="sidebarShow = !sidebarShow" class="">
-                            <span class="link-light"
-                                  uk-icon="icon: close; ratio: 2">
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                
-            </div> -->
     
 
-        
- 
-      </div>
+        <!-- <div class="uk-position-center-left uk-overlay zoom-out" uk-grid>
+
+            <div class="uk-width-1-3@s">
+                <div class="uk-card  uk-card-body">
+                        <ul class="uk-nav-primary uk-light" uk-nav>
+                        <li class="uk-parent" [class.gs-selected-menu] = "setCurrentMenu('/koleksi')">
+                            <a>
+                                <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/koleksi')" [routerLink]="['/koleksi' ]">Koleksi</span> 
+                                <span uk-nav-parent-icon></span>
+                            </a>
+                            <ul class="uk-nav-sub">
+                                <li [class.gs-selected-menu] = "setCurrentMenu('/benda-sejarah')">
+                                    <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/benda-sejarah')" [routerLink]="['/benda-sejarah' ]">Benda bersejarah</a>
+                                </li>
+                                <li [class.gs-selected-menu] = "setCurrentMenu('/kendaraan-sejarah')">
+                                    <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/kendaraan-sejarah')" [routerLink]="['/kendaraan-sejarah', 'daya-sasasa' ]">Kendaraan bersejarah</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+    
+                        <li class="uk-parent" [class.gs-selected-menu] = "setCurrentMenu('/sejarah')">
+                            <a>
+                                <span (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Sejarah</span> 
+                                <span uk-nav-parent-icon></span>
+                            </a>
+                            <ul class="uk-nav-sub">
+                                <li [class.gs-selected-menu] = "setCurrentMenu('/sejarah')">
+                                    <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/sejarah')" [routerLink]="['/sejarah' ]">Garis sejarah</a>
+                                </li>
+                                <li [class.gs-selected-menu] = "setCurrentMenu('/tokoh-sejarah')">
+                                    <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tokoh-sejarah')" [routerLink]="['/tokoh-sejarah' ]">Tokoh sejarah</a>
+                                </li>
+                            </ul>
+                        </li>
+    
+    
+                        <li [class.gs-selected-menu] = "setCurrentMenu('/dashboard')">
+                            <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/dashboard')" [routerLink]="['/dashboard' ]">Dashboard</a>
+                        </li>
+                        <li [class.gs-selected-menu] = "setCurrentMenu('/article')">
+                            <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/article')" [routerLink]="['/article', 'daya-sasasa' ]">Article</a>
+                        </li>
+                        <li [class.gs-selected-menu] = "setCurrentMenu('/post')">
+                            <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/post')" [routerLink]="['/post']">Berita</a>
+                        </li>
+                        <li [class.gs-selected-menu] = "setCurrentMenu('/snk')">
+                            <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/snk')" [routerLink]="['/snk']">Syarat & ketentuan</a>
+                        </li>
+                        <li [class.gs-selected-menu] = "setCurrentMenu('/faq')">
+                            <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/faq')" [routerLink]="['/faq']">FAQ</a>
+                        </li>
+                        <li [class.gs-selected-menu] = "setCurrentMenu('/tentang')">
+                            <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/tentang')" [routerLink]="['/tentang']">Tentang kami</a>
+                        </li>
+                        <li [class.gs-selected-menu] = "setCurrentMenu('/informasi')">
+                            <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/informasi')" [routerLink]="['/informasi']">Informasi</a>
+                        </li>
+                        <li [class.gs-selected-menu] = "setCurrentMenu('/login')">
+                            <a (click)="sidebarShow = !sidebarShow; setCurrentMenu('/login')" [routerLink]="['/login']">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-width-expand@s">
+                <div class="uk-card  uk-card-body">
+                    <dl class="uk-description-list uk-description-list-divider uk-light">
+                        <dt class="uk-text-danger">Description term</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+                        <dt class="uk-text-danger">Description term</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+                        <dt class="uk-text-danger">Description term</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+
+
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="uk-width-auto@s show-on-large-screen">
+                <div class="uk-card uk-card-body ">
+                    <div (click)="sidebarShow = !sidebarShow" class="">
+                        <span class="link-light"
+                                uk-icon="icon: close; ratio: 2">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div> -->
+
+
+    
+
+    </div>
   </div>
 </div>
 
