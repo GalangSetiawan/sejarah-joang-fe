@@ -30,16 +30,21 @@
                 <div class="uk-text-center uk-light">
                 
                 <h6 class="uk-padding-small uk-padding-remove-bottom ">Social media :</h6>
-                    <div class="uk-child-width-1-2 uk-grid-collapse uk-text-center" uk-grid>
-                        <div>
+                    <div class="uk-child-width-1-2 uk-grid-collapse uk-text-center pt-3" uk-grid>
+
+
+
+                        <div *ngFor="let socialMedia of socialMediaList">
                             <div class="uk-tile uk-padding-small uk-padding-remove-top uk-padding-remove-right">
-                                <img 
-                                src="assets/img/icon/ig.png" 
-                                style="width:50px" 
-                                alt="instagram">
+                                <a [attr.href]="socialMedia.socialMediaUrl" target="_blank">
+                                    <img 
+                                    [src]="socialMedia.socialMediaIcon" 
+                                    style="width:50px" 
+                                    [attr.alt]="socialMedia.socialMediaName">
+                                </a>
                             </div>
                         </div>
-                        <div>
+                        <!-- <div>
                             <div class="uk-tile uk-padding-small uk-padding-remove-top uk-padding-remove-left" >
                                 <img 
                                 src="assets/img/icon/fb.png" 
@@ -62,7 +67,7 @@
                                 alt="logo-tiktok"
                                 style="width:50px" >
                             </div>
-                        </div>
+                        </div> -->
                         
                     </div>
                 
@@ -113,9 +118,10 @@
                     <h6 class="uk-padding-small uk-padding-remove-bottom ">Contact us :</h6>
                     <div class="uk-child-width-expand@s uk-padding-small  uk-text-left uk-padding-remove-top" uk-grid>
                         <ul class="uk-list uk-list-hyphen uk-padding-small" style="cursor: pointer;">
-                            <li [routerLink]="['/informasi' ]">Official office</li>
-                            <li [routerLink]="['/informasi' ]">Tour guide</li>
-                            <li [routerLink]="['/informasi' ]">Loket</li>
+                            <li *ngFor="let contact of contactList" [routerLink]="['/informasi' ]">
+                                {{ contact.contactDesc }}
+                                <span *ngIf="contact.contactName != null">({{ contact.contactName}})</span>
+                            </li>
                         </ul>
                     </div>
         

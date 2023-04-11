@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router'
-// import data from 'src/assets/json/sejarah-joang-general-data.json';
 
 @Component({
   selector: 'app-root',
@@ -37,15 +36,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getGeneralData();
   }
 
-  public getGeneralData(){
-    // this.generalData = data;
-    console.log('generalData ===>', this.generalData);
-    
-
-  }
 
 
 }

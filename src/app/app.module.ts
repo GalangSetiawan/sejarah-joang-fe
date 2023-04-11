@@ -123,6 +123,8 @@ import { DenahComponent } from './views/denah/denah.component';
 import { RuangPamerComponent } from './views/ruang-pamer/ruang-pamer.component';
 import { SejarahDetailComponent } from './views/sejarah-detail/sejarah-detail.component';
 
+import { ProductService } from 'src/app/services/dummy-service/dummy-product.service'
+
 
 @NgModule({
   declarations: [
@@ -254,6 +256,7 @@ import { SejarahDetailComponent } from './views/sejarah-detail/sejarah-detail.co
   providers: [
     authInterceptorProviders,
     CurrencyPipe,
+    ProductService,
   ],
   bootstrap: [AppComponent]
 })

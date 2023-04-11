@@ -93,15 +93,27 @@ a {
 }
 
 
+.gs-mega-menu{
+    ul{
+        label:hover:before{
+            content: '-';
+        }
+        
+    }
+}
 
 .gs-selected-menu{
-    h4, span{
-        zoom: 1.3;
+    *{
+        // zoom: 1.3;
         background: orangered;
         padding: 6px !important;
     }
 
-
+    *::before{
+        content: '-';
+        // zoom: 1.3;
+        padding: 6px !important;
+    }
 }
 
 .gs-dashbord-menu{

@@ -1,22 +1,30 @@
-// ::ng-deep .p-tabview-panel{
-//     // background-color: red !important;
-// }
+::ng-deep .p-tabview-panel{
+    // background-color: red !important;
+}
 
-//  ::ng-deep .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link:focus {
-//     box-shadow: none;
-//     background-color: blue !important;
 
-// }
-// ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
-//     color :red !important
-// }
 
-// @mixin focused() {
-//     outline: $focusOutline;
-//     outline-offset: $focusOutlineOffset;
-//     box-shadow: $focusShadow;
-// }
+ ::ng-deep .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link:focus {
+    box-shadow: none;
+    background-color: blue !important;
 
-// :host ::ng-deep .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link:focus {
-//     box-shadow: none;
-// }
+
+
+}
+::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+    color :red !important;
+
+    .p-highlight{
+        color: yellow !important;
+    }
+}
+
+@mixin focused() {
+    outline: $focusOutline;
+    outline-offset: $focusOutlineOffset;
+    box-shadow: $focusShadow;
+}
+
+:host ::ng-deep .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link:focus {
+    box-shadow: none;
+}
