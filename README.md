@@ -4,7 +4,7 @@
 
 website ini dapat di akses menggunakan codespace,
 cara running project angular pada codespace
-1. install angular dengan versi yang sesuai pada project ->  `npm install angular/cli@versi.yang.diinginkan` -> v15.2.0
+1. install angular dengan versi yang sesuai pada project ->  `npm install @angular/cli@versi.yang.diinginkan` -> v15.2.0
 2. running programmnya menggunakan `npm run ng serve -- --host=0.0.0.0 --disable-host-check`
 3. jika berhasil running nanti akan buka tab baru yg berisi halaman preview nya, jika tidak muncul cek otorisasi site nya (kl di chrome ada di bagian kanan address bar)
 4. alamat preview biasanya seperti ini `https://galangsetiawan-musical-giggle-ppxwq5qqpg5h9xpg-4200.preview.app.github.dev/#/dashboard`
